@@ -1,0 +1,19 @@
+---
+title: HCQ
+author: ''
+date: '2020-05-09'
+slug: hcq
+categories: []
+tags: []
+description: ''
+topics: []
+---
+Since we have a $2 \times2$ table, we use tkonfound function to calculates the number of cases (RIS) that would have to be switched from one cell to another of a $2 \times2$ table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.
+```{r}
+konfound::tkonfound(a = 14, b = 17, c = 6, d= 25)
+```
+
+Now we tkonfound_fig to generate the figure that plots the change in effect size as a function of switching outcomes for treatment cases. 
+```{r,warning = FALSE}
+konfound::tkonfound_fig(a = 14, b = 17, c = 6, d= 25)
+```

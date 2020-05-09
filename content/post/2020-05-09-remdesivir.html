@@ -1,0 +1,47 @@
+---
+title: Remdesivir
+author: ''
+date: '2020-05-09'
+slug: remdesivir
+categories: []
+tags: []
+description: ''
+topics: []
+---
+
+
+
+<div id="konfound-remdesivir-on-mortality" class="section level2">
+<h2>konfound: Remdesivir on mortality</h2>
+<pre class="r"><code>konfound::tkonfound(a = 10, b = 68, c = 22, d= 136)</code></pre>
+<pre><code>## [[1]]
+## [1] &quot;The tkonfound function calculates the number of cases that would have to be switched from one cell to another of a 2x2 table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.&quot;
+## 
+## [[2]]
+## [1] &quot;See konfound_fig for full and accessible details in graphic form!&quot;
+## 
+## [[3]]
+## [1] &quot;To sustain an inference, 16 cases need to be transferred from treatment success to treatment failure, as shown, from the User-entered Table to the Transfer Table.&quot;
+## 
+## $User_enter_value
+##           Fail Success
+## Control     10      68
+## Treatment   22     136
+## 
+## $Transfer_Table
+##           Fail Success
+## Control     10      68
+## Treatment   38     120
+## 
+## [[6]]
+## [1] &quot;For the User-entered Table, we have a Pearson&#39;s chi square of 0.054, with p value of 0.816.&quot;
+## 
+## [[7]]
+## [1] &quot;For the Transfer Table, we have a Pearson&#39;s chi square of 4.065, with p value of 0.044.&quot;</code></pre>
+<pre class="r"><code>konfound::tkonfound_fig(a = 10, b = 68, c = 22, d= 136)</code></pre>
+<pre><code>## [[1]]</code></pre>
+<p><img src="/post/2020-05-09-remdesivir_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre><code>## 
+## [[2]]</code></pre>
+<p><img src="/post/2020-05-09-remdesivir_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
+</div>

@@ -1,0 +1,46 @@
+---
+title: HCQ
+author: ''
+date: '2020-05-09'
+slug: hcq
+categories: []
+tags: []
+description: ''
+topics: []
+---
+
+
+
+<p>Since we have a <span class="math inline">\(2 \times2\)</span> table, we use tkonfound function to calculates the number of cases (RIS) that would have to be switched from one cell to another of a <span class="math inline">\(2 \times2\)</span> table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.</p>
+<pre class="r"><code>konfound::tkonfound(a = 14, b = 17, c = 6, d= 25)</code></pre>
+<pre><code>## [[1]]
+## [1] &quot;The tkonfound function calculates the number of cases that would have to be switched from one cell to another of a 2x2 table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.&quot;
+## 
+## [[2]]
+## [1] &quot;See konfound_fig for full and accessible details in graphic form!&quot;
+## 
+## [[3]]
+## [1] &quot;To invalidate the inference, 1 case needs to be transferred from treatment success to treatment failure, as shown, from the User-entered Table to the Transfer Table.&quot;
+## 
+## $User_enter_value
+##           Fail Success
+## Control     14      17
+## Treatment    6      25
+## 
+## $Transfer_Table
+##           Fail Success
+## Control     14      17
+## Treatment    7      24
+## 
+## [[6]]
+## [1] &quot;For the User-entered Table, we have a Pearson&#39;s chi square of 4.724, with p value of 0.030.&quot;
+## 
+## [[7]]
+## [1] &quot;For the Transfer Table, we have a Pearson&#39;s chi square of 3.528, with p value of 0.060.&quot;</code></pre>
+<p>Now we tkonfound_fig to generate the figure that plots the change in effect size as a function of switching outcomes for treatment cases.</p>
+<pre class="r"><code>konfound::tkonfound_fig(a = 14, b = 17, c = 6, d= 25)</code></pre>
+<pre><code>## [[1]]</code></pre>
+<p><img src="/post/2020-05-09-hcq_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre><code>## 
+## [[2]]</code></pre>
+<p><img src="/post/2020-05-09-hcq_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
