@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A 12-min talk</title>
+      <link>/post/a-short-talk/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/a-short-talk/</guid>
+      <description>In an online workshop on the theme of “COVID-19 and Public Policy and Management” (May 1st) at Arizona State Unviersity, Prof. Spiro Maroulis gave a talk “Communicating the Robustness of Inferences as COVID-19 Evidence Accumulates.” See the link here.</description>
+    </item>
     
     <item>
       <title>HCQ</title>

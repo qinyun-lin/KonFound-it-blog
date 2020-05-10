@@ -16,7 +16,7 @@ paginate = 10
   subtitle = "Using KonFound-it to Communicate Findings of COVID-19 Studies"
   brand = "KonFound-it"
   googleAnalytics = "Your Google Analytics tracking ID"
-  disqus = "Your Disqus shortname"
+  disqus = "konfoundcovid"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
   dateFormat = "02 Jan 2006, 15:04"

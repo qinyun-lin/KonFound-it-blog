@@ -1,12 +1,11 @@
 ---
 date: "2014-04-09"
-description: About me and this site
+description: About us and this site
 sidemenu: "true"
 title: About
 ---
 
-Hugo is a static site engine written in Go.
-
+We are a group of researchers who would like to contribute to 
 
 It makes use of a variety of open source projects including:
 
