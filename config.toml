@@ -1,4 +1,4 @@
-baseurl = "https://www.example.com/"
+baseurl = "https://competent-bhabha-6df9ad.netlify.app/"
 languageCode = "en-us"
 title = "Robustness Dashboard"
 theme = "blackburn"
