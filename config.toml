@@ -1,6 +1,6 @@
 baseurl = "https://competent-bhabha-6df9ad.netlify.app/"
 languageCode = "en-us"
-title = "Robustness Dashboard"
+title = "KonFound-blog"
 theme = "blackburn"
 author = "KonFound-it Group"
 copyright = "&copy; 2020. All rights reserved."
@@ -13,8 +13,8 @@ paginate = 10
 
 [params]
   # Shown in the home page
-  subtitle = "Using KonFound-it to Communicate Findings of COVID-19 Studies"
-  brand = "KonFound-it"
+  subtitle = "Conversations about quantifying the robustness of inferences."
+  brand = "KonFound-blog"
   googleAnalytics = "Your Google Analytics tracking ID"
   disqus = "konfoundcovid"
   # CSS name for highlight.js

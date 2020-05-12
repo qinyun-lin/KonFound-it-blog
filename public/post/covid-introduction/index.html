@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.70.0" />
 
-  <title>Remdesivir on mortality &middot; KonFound-blog</title>
+  <title>COVID Introduction &middot; KonFound-blog</title>
 
     
 
@@ -208,7 +208,7 @@
 
 
 <div class="header">
-  <h1>Remdesivir on mortality</h1>
+  <h1>COVID Introduction</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -217,7 +217,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>10 May 2020, 00:00</time>
+    <time>12 May 2020, 00:00</time>
   </div>
 
   
@@ -241,51 +241,17 @@
   
 
 
-<p>Consider <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31022-9/fulltext">the recent randomized double-blind, placebo-controlled trial of Remdesivir for patients with severe COVID-19</a>. The study found no discernable difference in mortality: Twenty-two of <span class="math inline">\(158\)</span> (<span class="math inline">\(14\%\)</span>) Remdesivir patients died within <span class="math inline">\(28\)</span> days while <span class="math inline">\(10\)</span> of <span class="math inline">\(78\)</span> (<span class="math inline">\(13\%\)</span>) in the placebo group died (Table 1). How different would the results have to be in the current study to change statistical inference about Remdesivir?</p>
-<div class="figure">
-<img src="/post/2020-05-09-remdesivir_files/Table_Rem.png" alt="Table 1. Comparison of Remdesivir vs Placebo Control on Mortality. Data from Table 1, Wang et al (2020). Cells represent number of cases by day 28 of study. RIS=Robustness of Inference to Switches." style="width:90.0%" />
-<p class="caption"><strong>Table 1. Comparison of Remdesivir vs Placebo Control on Mortality. </strong>Data from Table 1, Wang et al (2020). Cells represent number of cases by day 28 of study. RIS=Robustness of Inference to Switches.</p>
-</div>
-<p>To answer this question, we identify the number of Remdesivir treatment patients that would need to be switched between “died” and “survived” to exceed an effect size of a given magnitude – a quantity we refer to as the Robustness of the Inference to Switches (RIS). We calculate that the effect would be statistically significant and positive if <span class="math inline">\(14\)</span> or more of the <span class="math inline">\(22\)</span> treated patients who died instead had survived (<span class="math inline">\(RIS=-14\)</span>).
-Figure 1 places these results in a larger context by plotting the change in effect size as a function of switching outcomes for treatment cases. The estimated effect from the observed data is <span class="math inline">\(14\)</span> switches below the top dashed line representing statistical significance at the <span class="math inline">\(.05\)</span> level for a positive finding, and <span class="math inline">\(16\)</span> switches above statistical significance at the <span class="math inline">\(.05\)</span> level for a negative finding (bottom dashed line). The RIS shows that even though the estimated effect is near zero, a change in outcomes for a small absolute number of patients (<span class="math inline">\(14\)</span> or <span class="math inline">\(16\)</span>) could generate a different inference in either direction.</p>
-<div class="figure">
-<img src="Fig_Rem.png" alt="Figure 1. Decrease in probability of mortality for treatment group after hypothetically switching treatment survival cases to treatment death.Black square, study estimate; top dashed line, positive estimate significant at 5\% level; bottom dashed line, negative estimate significant at 5\% level." />
-<p class="caption"><strong>Figure 1. Decrease in probability of mortality for treatment group after hypothetically switching treatment survival cases to treatment death.</strong>Black square, study estimate; top dashed line, positive estimate significant at <span class="math inline">\(5\%\)</span> level; bottom dashed line, negative estimate significant at <span class="math inline">\(5\%\)</span> level.</p>
-</div>
-<p><img src="/post/2020-05-09-remdesivir_files/Fig_Rem.png" style="width:90.0%" /></p>
-<div id="konfound-remdesivir-on-mortality" class="section level2">
-<h2>konfound: Remdesivir on mortality</h2>
-<pre class="r"><code>konfound::tkonfound(a = 10, b = 68, c = 22, d= 136)</code></pre>
-<pre><code>## [[1]]
-## [1] &quot;The tkonfound function calculates the number of cases that would have to be switched from one cell to another of a 2x2 table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.&quot;
-## 
-## [[2]]
-## [1] &quot;See konfound_fig for full and accessible details in graphic form!&quot;
-## 
-## [[3]]
-## [1] &quot;To sustain an inference, 16 cases need to be transferred from treatment success to treatment failure, as shown, from the User-entered Table to the Transfer Table.&quot;
-## 
-## $User_enter_value
-##           Fail Success
-## Control     10      68
-## Treatment   22     136
-## 
-## $Transfer_Table
-##           Fail Success
-## Control     10      68
-## Treatment   38     120
-## 
-## [[6]]
-## [1] &quot;For the User-entered Table, we have a Pearson&#39;s chi square of 0.054, with p value of 0.816.&quot;
-## 
-## [[7]]
-## [1] &quot;For the Transfer Table, we have a Pearson&#39;s chi square of 4.065, with p value of 0.044.&quot;</code></pre>
-<pre class="r"><code>konfound::tkonfound_fig(a = 10, b = 68, c = 22, d= 136)</code></pre>
-<pre><code>## [[1]]</code></pre>
-<p><img src="/post/2020-05-09-remdesivir_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<pre><code>## 
-## [[2]]</code></pre>
-<p><img src="/post/2020-05-09-remdesivir_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
+<div id="Introduction" class="section level1 unnumbered">
+<h1>Introduction</h1>
+<p>As those who work in public policy and health, we seek to help a broad range of people, with a broad range of statistical backgrounds, interpret uncertainty about public health findings regarding COVID-19. We observe that currently, there is little common language for expressing uncertainty. Consider Anthony Fauci’s quote (as in Healio on April 29):</p>
+<p>“The trial, which began Feb. 21 this year, compared remdesivir with placebo in more than <span class="math inline">\(1,000\)</span> patients. Remdesivir improved recovery from <span class="math inline">\(15\)</span> days to <span class="math inline">\(11\)</span> days, with a <span class="math inline">\(p\)</span> value of <span class="math inline">\(0.001\)</span>.…We would have normally waited several more days. <strong>The data may change, but the conclusion won’t.</strong>”</p>
+<p>Like Fauci, we attend to the conclusion of the research. But instead of referring to a small p-value defined by a sampling distribution which may be unfamiliar to many, we quantify the robustness of the conclusion by counting how many treatment cases would have to be switched from successful to unsuccessful outcomes to change the conclusion. This generates statements such as <em>“xx of the treatment cases that experienced success would have to have experienced failure to change the conclusion at conventional levels of statistical significance.”</em> Thus, we represent the robustness of the inference/conclusion in the very human terms of patient experiences.</p>
+<p><strong>Communicating the uncertainty of new findings regarding COVID-19 in the accessible, human, terms of patients’ experiences is critical for informing public policy and clinical practice.</strong></p>
+<p>See other posts for illustrative examples. Click here for working paper further describing the rationale and benefits of the approach.</p>
+<p><strong>Examples:</strong></p>
+<p>[Hydroxychloriquine.][HCQ on Pneumonia] Good example to illustrate approach. Data from a not yet peer-reviewed study conducted at the Renmin Hospital in Wuhan. This was the first RCT of hydroxychloroquine as a treatment for COVID-19.</p>
+<p>[Remdesivir.][Remdesivir on mortality] Data from an April 29, 2020 study published in The Lancet of a double-blind, placebo-controlled randomized trial of Remdesivir as a treatment for COVID-19. Includes example of calculating robustness for mortality, as well as time to clinical improvement (continuous measure).</p>
+<p>[Robustnesss for accumulating studies: antihypertensive treatments.][Robustnesss for accumulating studies: antihypertensive drugs] As studies emergent one can update the robustness of the cumulative findings for a given treatment. We illustrate using a historical non-COVID example: the study-by-study accumulation of 16 estimated effects presented in a meta-analysis of randomized trials examining the impact of hypertension treatments on the probability of suffering a stroke.</p>
 </div>
 
   
@@ -295,13 +261,13 @@ Figure 1 places these results in a larger context by plotting the change in effe
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="/post/a-short-talk/"><i class="fa fa-chevron-left"></i></a>
+    <a href="/post/remdesivir/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="/post/a-short-talk/">A 12-min talk</a>
+      <a href="/post/remdesivir/">Remdesivir on mortality</a>
     </nav>
     
   </div>
@@ -310,14 +276,8 @@ Figure 1 places these results in a larger context by plotting the change in effe
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="/post/covid-introduction/">COVID Introduction</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="/post/covid-introduction/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
