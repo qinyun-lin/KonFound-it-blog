@@ -1,11 +1,11 @@
 ---
 title: Remdesivir on mortality
 author: ''
-date: '2020-05-10'
+date: '2020-05-12'
 tags:
   - COVID-19
 slug: remdesivir
-weight: 2
+weight: 3
 ---
 
 
@@ -18,12 +18,13 @@ weight: 2
 <p>To answer this question, we identify the number of Remdesivir treatment patients that would need to be switched between “died” and “survived” to exceed an effect size of a given magnitude – a quantity we refer to as the Robustness of the Inference to Switches (RIS). We calculate that the effect would be statistically significant and positive if <span class="math inline">\(14\)</span> or more of the <span class="math inline">\(22\)</span> treated patients who died instead had survived (<span class="math inline">\(RIS=-14\)</span>).
 Figure 1 places these results in a larger context by plotting the change in effect size as a function of switching outcomes for treatment cases. The estimated effect from the observed data is <span class="math inline">\(14\)</span> switches below the top dashed line representing statistical significance at the <span class="math inline">\(.05\)</span> level for a positive finding, and <span class="math inline">\(16\)</span> switches above statistical significance at the <span class="math inline">\(.05\)</span> level for a negative finding (bottom dashed line). The RIS shows that even though the estimated effect is near zero, a change in outcomes for a small absolute number of patients (<span class="math inline">\(14\)</span> or <span class="math inline">\(16\)</span>) could generate a different inference in either direction.</p>
 <div class="figure">
-<img src="Fig_Rem.png" alt="Figure 1. Decrease in probability of mortality for treatment group after hypothetically switching treatment survival cases to treatment death.Black square, study estimate; top dashed line, positive estimate significant at 5\% level; bottom dashed line, negative estimate significant at 5\% level." />
+<img src="/post/2020-05-09-remdesivir_files/Fig_Rem.png" alt="Figure 1. Decrease in probability of mortality for treatment group after hypothetically switching treatment survival cases to treatment death.Black square, study estimate; top dashed line, positive estimate significant at 5\% level; bottom dashed line, negative estimate significant at 5\% level." style="width:90.0%" />
 <p class="caption"><strong>Figure 1. Decrease in probability of mortality for treatment group after hypothetically switching treatment survival cases to treatment death.</strong>Black square, study estimate; top dashed line, positive estimate significant at <span class="math inline">\(5\%\)</span> level; bottom dashed line, negative estimate significant at <span class="math inline">\(5\%\)</span> level.</p>
 </div>
-<p><img src="/post/2020-05-09-remdesivir_files/Fig_Rem.png" style="width:90.0%" /></p>
 <div id="konfound-remdesivir-on-mortality" class="section level2">
 <h2>konfound: Remdesivir on mortality</h2>
+<p>Now let’s see how to use R package konfound to reproduce the results.</p>
+<p>Similar to the HCQ example, we have a <span class="math inline">\(2 \times2\)</span> table in this Remdesivir example. Accordingly, we use tkonfound function to calculates the number of cases (RIS) that would have to be switched from one cell to another of a <span class="math inline">\(2 \times2\)</span> table to invalidate an inference made about the association between the rows and columns.</p>
 <pre class="r"><code>konfound::tkonfound(a = 10, b = 68, c = 22, d= 136)</code></pre>
 <pre><code>## [[1]]
 ## [1] &quot;The tkonfound function calculates the number of cases that would have to be switched from one cell to another of a 2x2 table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.&quot;

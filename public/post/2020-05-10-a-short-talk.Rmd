@@ -1,7 +1,7 @@
 ---
 title: A 12-min talk 
 author: Spiro Maroulis
-date: '2020-05-10'
+date: '2020-05-12'
 slug: a-short-talk
 categories: []
 tags: []

@@ -14,20 +14,31 @@
     
     <item>
       <title>COVID Introduction</title>
-      <link>/post/covid-introduction/</link>
+      <link>/2020/05/12/covid-introduction/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/covid-introduction/</guid>
-      <description>Introduction As those who work in public policy and health, we seek to help a broad range of people, with a broad range of statistical backgrounds, interpret uncertainty about public health findings regarding COVID-19. We observe that currently, there is little common language for expressing uncertainty. Consider Anthony Fauci’s quote (as in Healio on April 29):
+      <guid>/2020/05/12/covid-introduction/</guid>
+      <description>As those who work in public policy and health, we seek to help a broad range of people, with a broad range of statistical backgrounds, interpret uncertainty about public health findings regarding COVID-19. We observe that currently, there is little common language for expressing uncertainty. Consider Anthony Fauci’s quote (as in Healio on April 29):
 “The trial, which began Feb. 21 this year, compared remdesivir with placebo in more than \(1,000\) patients.</description>
     </item>
     
     <item>
-      <title>Remdesivir on mortality</title>
-      <link>/post/remdesivir/</link>
-      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      <title>HCQ on Pneumonia</title>
+      <link>/2020/05/12/hcq/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/remdesivir/</guid>
+      <guid>/2020/05/12/hcq/</guid>
+      <description>The first report of a randomized trial regarding hydroxychloroquine (HCQ) came from a study conducted at the Renmin Hospital of Wuhan University. The table below shows the association between treatment (HCQ vs conventional) and condition (improved vs exacerbated/ucnhanged). For Table 1, \(χ^2= 4.7\), \(p = 0.03\), and the authors concluded that HCQ was efficacious.
+Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments and Pneumonia on Chest CT
+ To quantify the robustness of the inference, we calculate the number of treatment cases that would need to be switched from “improved” to “exacerbated or unchanged” to change the inference – a quantity we refer to as the Robustness of the Inference to Switches (RIS).</description>
+    </item>
+    
+    <item>
+      <title>Remdesivir on mortality</title>
+      <link>/2020/05/12/remdesivir/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/12/remdesivir/</guid>
       <description>Consider the recent randomized double-blind, placebo-controlled trial of Remdesivir for patients with severe COVID-19. The study found no discernable difference in mortality: Twenty-two of \(158\) (\(14\%\)) Remdesivir patients died within \(28\) days while \(10\) of \(78\) (\(13\%\)) in the placebo group died (Table 1). How different would the results have to be in the current study to change statistical inference about Remdesivir?
 Table 1. Comparison of Remdesivir vs Placebo Control on Mortality.</description>
     </item>

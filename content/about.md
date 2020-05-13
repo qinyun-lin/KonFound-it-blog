@@ -1,30 +1,30 @@
 ---
-date: "2014-04-09"
-description: About us and this site
-sidemenu: "true"
 title: About
+author: ''
+date: '2020-05-13'
+description: About us, KonFound and this site
+sidemenu: 'true'
 ---
 
-We are a group of researchers who would like to contribute to 
+We are a group of researchers, led by Dr. Ken Frank, who would like to contribute to better communications of research inferences/findings. 
 
-It makes use of a variety of open source projects including:
+Our group includes: 
+* [Dr. Ken Frank](https://msu.edu/~kenfrank/)
+* [Dr. Spiro Maroulis](http://www.public.asu.edu/~smarouli/Spiro_Maroulis/Home.html)
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+You can find **KonFound-it! R Shiny** [here](https://jmichaelrosenberg.shinyapps.io/konfound-it/) (friendly for phone users)!
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
+You can find information about **konfound R pakcage** [here](https://github.com/jrosen48/konfound).
 
-## Setup
 
-Some fun facts about [Hugo](http://gohugo.io/):
+Click [here](https://groups.google.com/forum/#!forum/konfound-it) to join our mailing list for updates on workshops, progress in related research and publications!
 
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
+Have questions or suggestions? Feel free to contact Dr. Ken Frank via [email](mailto:kenfrank@msu.com) or [open an issue on GitHub](https://github.com/linqinyu/KonFound-blog/issues/new).
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
+Thanks for reading! Happy KonFound-it!
 
-Thanks for reading!
+
+We refer to a lot of open resources for building this site, including:
+* [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
+* [Simply Statistics](https://simplystatistics.org/)
+

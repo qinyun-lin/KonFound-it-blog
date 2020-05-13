@@ -7,70 +7,80 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>COVID Introduction</title>
-      <link>/post/covid-introduction/</link>
+      <link>/2020/05/12/covid-introduction/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/covid-introduction/</guid>
-      <description>Introduction As those who work in public policy and health, we seek to help a broad range of people, with a broad range of statistical backgrounds, interpret uncertainty about public health findings regarding COVID-19. We observe that currently, there is little common language for expressing uncertainty. Consider Anthony Fauci’s quote (as in Healio on April 29):
+      <guid>/2020/05/12/covid-introduction/</guid>
+      <description>As those who work in public policy and health, we seek to help a broad range of people, with a broad range of statistical backgrounds, interpret uncertainty about public health findings regarding COVID-19. We observe that currently, there is little common language for expressing uncertainty. Consider Anthony Fauci’s quote (as in Healio on April 29):
 “The trial, which began Feb. 21 this year, compared remdesivir with placebo in more than \(1,000\) patients.</description>
     </item>
     
     <item>
-      <title>Remdesivir on mortality</title>
-      <link>/post/remdesivir/</link>
-      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      <title>HCQ on Pneumonia</title>
+      <link>/2020/05/12/hcq/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/remdesivir/</guid>
+      <guid>/2020/05/12/hcq/</guid>
+      <description>The first report of a randomized trial regarding hydroxychloroquine (HCQ) came from a study conducted at the Renmin Hospital of Wuhan University. The table below shows the association between treatment (HCQ vs conventional) and condition (improved vs exacerbated/ucnhanged). For Table 1, \(χ^2= 4.7\), \(p = 0.03\), and the authors concluded that HCQ was efficacious.
+Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments and Pneumonia on Chest CT
+ To quantify the robustness of the inference, we calculate the number of treatment cases that would need to be switched from “improved” to “exacerbated or unchanged” to change the inference – a quantity we refer to as the Robustness of the Inference to Switches (RIS).</description>
+    </item>
+    
+    <item>
+      <title>Remdesivir on mortality</title>
+      <link>/2020/05/12/remdesivir/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/12/remdesivir/</guid>
       <description>Consider the recent randomized double-blind, placebo-controlled trial of Remdesivir for patients with severe COVID-19. The study found no discernable difference in mortality: Twenty-two of \(158\) (\(14\%\)) Remdesivir patients died within \(28\) days while \(10\) of \(78\) (\(13\%\)) in the placebo group died (Table 1). How different would the results have to be in the current study to change statistical inference about Remdesivir?
 Table 1. Comparison of Remdesivir vs Placebo Control on Mortality.</description>
     </item>
     
     <item>
-      <title>A 12-min talk</title>
-      <link>/post/a-short-talk/</link>
-      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/a-short-talk/</guid>
-      <description>In an online workshop on the theme of “COVID-19 and Public Policy and Management” (May 1st) at Arizona State Unviersity, Prof. Spiro Maroulis gave a talk “Communicating the Robustness of Inferences as COVID-19 Evidence Accumulates.” See the link here.</description>
-    </item>
-    
-    <item>
-      <title>HCQ</title>
-      <link>/post/hcq/</link>
-      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/hcq/</guid>
-      <description>Since we have a \(2 \times2\) table, we use tkonfound function to calculates the number of cases (RIS) that would have to be switched from one cell to another of a \(2 \times2\) table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.
-konfound::tkonfound(a = 14, b = 17, c = 6, d= 25) ## [[1]] ## [1] &amp;quot;The tkonfound function calculates the number of cases that would have to be switched from one cell to another of a 2x2 table to invalidate an inference made about the association between the rows and columns.</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>We are a group of researchers who would like to contribute to
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-Setup Some fun facts about Hugo:
- Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
+      <description>We are a group of researchers, led by Dr. Ken Frank, who would like to contribute to better communications of research inferences/findings.
+Our group includes:
+ Dr. Ken Frank Dr. Spiro Maroulis  You can find KonFound-it! R Shiny here (friendly for phone users)!
+You can find information about konfound R pakcage here.
+Click here to join our mailing list for updates on workshops, progress in related research and publications!</description>
+    </item>
+    
+    <item>
+      <title>A 12-min talk</title>
+      <link>/2020/05/12/a-short-talk/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/12/a-short-talk/</guid>
+      <description>In an online workshop on the theme of “COVID-19 and Public Policy and Management” (May 1st) at Arizona State Unviersity, Prof. Spiro Maroulis gave a talk “Communicating the Robustness of Inferences as COVID-19 Evidence Accumulates.” See the link here.</description>
     </item>
     
     <item>
       <title>Contact</title>
       <link>/contact/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/contact/</guid>
-      <description>If you have any question or want to collaborate for a certain project, feel free to contact us via email.</description>
+      <description>If you have any question or want to collaborate for a certain project, feel free to contact Dr. Ken Frank via email.</description>
+    </item>
+    
+    <item>
+      <title>Workshops</title>
+      <link>/workshops/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/</guid>
+      <description> Past Workshops  Future Workshops  AERA Virtual Research Learning Seris, Tuesday, May 19th, 2020   </description>
     </item>
     
   </channel>

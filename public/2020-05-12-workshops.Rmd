@@ -1,0 +1,14 @@
+---
+title: Workshops
+author: ''
+date: '2020-05-12'
+slug: workshops
+categories: []
+tags: []
+description: ''
+topics: []
+---
+## Past Workshops
+
+## Future Workshops 
+* [AERA Virtual Research Learning Seris, Tuesday, May 19th, 2020](http://www.aera.net/Professional-Opportunities-Funding/AERA-Virtual-Research-Learning-Series2020) 

@@ -1,19 +1,28 @@
 ---
-title: HCQ
+title: HCQ on Pneumonia
 author: ''
-date: '2020-05-09'
+date: '2020-05-12'
+tags:
+  - COVID-19
 slug: hcq
-categories: []
-tags: []
-description: ''
-topics: []
+weight: 2
 ---
+The [first report of a randomized trial](https://www.medrxiv.org/content/medrxiv/early/2020/04/10/2020.03.22.20040758.full.pdf) regarding hydroxychloroquine (HCQ) came from a study conducted at the Renmin Hospital of Wuhan University.  The table below shows the association between treatment (HCQ vs conventional) and condition (improved vs exacerbated/ucnhanged). 
+For Table 1, $χ^2= 4.7$, $p = 0.03$, and the authors concluded that HCQ was efficacious. 
+
+![**Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments and Pneumonia on Chest CT**](/post/2020-05-09-hcq_files/Table 1.png){width=90%}
+
+To quantify the robustness of the inference, we calculate the number of treatment cases that would need to be switched from “improved” to “exacerbated or unchanged” to change the inference -- a quantity we refer to as the Robustness of the Inference to Switches (RIS).  We calculate that if one of the 25 HCQ “improved” cases were instead classified as “excacerbated or unchanged” (RIS=1), the probability difference between HCQ and the control would drop to $23$ percentage points ($\frac{24}{31} - \frac{17}{31}=.23$) and would no longer be statistically significant ($χ^2 = 3.5$, $p > .06$). 
+
+## konfound: Remdesivir on mortality
+Now let's see how to use R package konfound to reproduce the results. 
+
 Since we have a $2 \times2$ table, we use tkonfound function to calculates the number of cases (RIS) that would have to be switched from one cell to another of a $2 \times2$ table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.
 ```{r}
 konfound::tkonfound(a = 14, b = 17, c = 6, d= 25)
 ```
 
-Now we tkonfound_fig to generate the figure that plots the change in effect size as a function of switching outcomes for treatment cases. 
+Now we use tkonfound_fig to generate the figure that plots the change in effect size as a function of switching outcomes for treatment cases. 
 ```{r,warning = FALSE}
 konfound::tkonfound_fig(a = 14, b = 17, c = 6, d= 25)
 ```
