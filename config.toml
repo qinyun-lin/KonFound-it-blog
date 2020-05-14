@@ -4,6 +4,7 @@ title = "KonFound-it"
 theme = "blackburn"
 author = "KonFound-it Group"
 copyright = "&copy; 2020. All rights reserved."
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #canonifyurls = true
 paginate = 10
 math = true
@@ -60,5 +61,5 @@ post = "/:year/:month/:day/:slug"
 [social]
   # Link your social networking accouns to the side menu
   # by entering your username or ID.
-  twitter = "*"
+  twitter = "kenfrank20"
   github = "linqinyu/KonFound-blog"
