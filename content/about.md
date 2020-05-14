@@ -2,7 +2,7 @@
 title: About
 author: ''
 date: '2020-05-13'
-description: About us, KonFound and this site
+description: About us, KonFound-it and this site
 sidemenu: 'true'
 ---
 
@@ -11,10 +11,13 @@ We are a group of researchers, led by Dr. Ken Frank, who would like to contribut
 Our group includes: 
 * [Dr. Ken Frank](https://msu.edu/~kenfrank/)
 * [Dr. Spiro Maroulis](http://www.public.asu.edu/~smarouli/Spiro_Maroulis/Home.html)
+* [Dr. Ran Xu](https://sites.google.com/site/ranxupersonalweb/)
+* [Dr. Qinyun Lin](https://spatial.uchicago.edu/directories/full/team)
+* [Dr. Joshua Rosenberg](https://joshuamrosenberg.com/)
 
 You can find **KonFound-it! R Shiny** [here](https://jmichaelrosenberg.shinyapps.io/konfound-it/) (friendly for phone users)!
 
-You can find information about **konfound R pakcage** [here](https://github.com/jrosen48/konfound).
+You can find information about **konfound R package** [here](https://github.com/jrosen48/konfound).
 
 
 Click [here](https://groups.google.com/forum/#!forum/konfound-it) to join our mailing list for updates on workshops, progress in related research and publications!

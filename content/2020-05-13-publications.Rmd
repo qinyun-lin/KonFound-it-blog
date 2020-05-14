@@ -1,0 +1,18 @@
+---
+title: Publications
+author: ''
+date: '2020-05-13'
+slug: publications
+categories: []
+tags: []
+description: ''
+topics: []
+---
+
++ [Frank K. 2000. Impact of a Confounding Variable on the Inference of a Regression Coefficient.  *Sociological Methods and Research*, 29(2), 147-194.](https://msu.edu/~kenfrank/papers/impact%20of%20a%20confounding%20variable.pdf)
+
++ [Frank, K. A., Sykes, G., Anagnostopoulos, D., Cannata, M., Chard, L., Krause, A., & McCrory, R. (2008). Does NBPTS certification affect the number of colleagues a teacher helps with instructional matters?. *Educational Evaluation and Policy Analysis*, 30(1), 3-30.](https://msu.edu/~kenfrank/papers/Does%20NBPTS%20Certification%20Affect%20the%20Number%20of%20Colleagues%20a%20Teacher%20Helps%20with%20Instructional%20Matters%20acceptance%20version%202.doc)
+
++ [Frank, K. A., Maroulis, S. J., Duong, M. Q., & Kelcey, B. M. (2013). What would it take to change an inference? Using Rubin’s causal model to interpret the robustness of causal inferences. *Educational Evaluation and Policy Analysis*, 35(4), 437-460.](https://msu.edu/~kenfrank/What%20would%20it%20take%20to%20Change%20an%20Inference%20published.docx)
+
+

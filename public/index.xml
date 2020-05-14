@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>KonFound-it</title>
+    <title>KonFound-it!</title>
     <link>/</link>
-    <description>Recent content on KonFound-it</description>
+    <description>Recent content on KonFound-it!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
@@ -34,13 +34,34 @@ Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments
     </item>
     
     <item>
-      <title>Remdesivir on mortality</title>
+      <title>Remdesivir on Mortality</title>
       <link>/2020/05/12/remdesivir/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/05/12/remdesivir/</guid>
       <description>Consider the recent randomized double-blind, placebo-controlled trial of Remdesivir for patients with severe COVID-19. The study found no discernable difference in mortality: Twenty-two of \(158\) (\(14\%\)) Remdesivir patients died within \(28\) days while \(10\) of \(78\) (\(13\%\)) in the placebo group died (Table 1). How different would the results have to be in the current study to change statistical inference about Remdesivir?
 Table 1. Comparison of Remdesivir vs Placebo Control on Mortality.</description>
+    </item>
+    
+    <item>
+      <title> Remdesivir on Time to Clinical Improvement</title>
+      <link>/2020/05/13/remdesivir-on-time-to-clinical-improvement/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/13/remdesivir-on-time-to-clinical-improvement/</guid>
+      <description>Now consider the previous example of Remdesivir but instead we are interested in the continuous outcome variable of time to clinical improvement.
+Figure 2. Time to clinical improvement in the Remdesivir example. Data from Table 3, Wang et al (2020).
+ We can interpret the robustness of inference regarding Remdesivir’s effect on time to clinical improvement in following ways.
+Percent Bias Necessary to Invalidate the Inference To sustain an inference, \(28.</description>
+    </item>
+    
+    <item>
+      <title>Historical Example: Accumulation of Effects of Antihypertensive Treatments.</title>
+      <link>/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/</guid>
+      <description>Online dashboards, such as the COVID-19 clinical trials registry, provide near real-time tracking and categorization of findings accumulating across emerging research. As such one can update the robustness of the cumulative findings for a given COVID-19 treatment. We illustrate using a historical non-COVID example: the study-by-study accumulation of \(16\) estimated effects presented in a meta-analysis of randomized trials examining the impact of hypertension treatments on the probability of suffering a stroke (data from Collins et al.</description>
     </item>
     
     <item>
@@ -51,9 +72,20 @@ Table 1. Comparison of Remdesivir vs Placebo Control on Mortality.</description>
       <guid>/about/</guid>
       <description>We are a group of researchers, led by Dr. Ken Frank, who would like to contribute to better communications of research inferences/findings.
 Our group includes:
- Dr. Ken Frank Dr. Spiro Maroulis  You can find KonFound-it! R Shiny here (friendly for phone users)!
-You can find information about konfound R pakcage here.
+ Dr. Ken Frank Dr. Spiro Maroulis Dr. Ran Xu Dr. Qinyun Lin Dr. Joshua Rosenberg  You can find KonFound-it! R Shiny here (friendly for phone users)!
+You can find information about konfound R package here.
 Click here to join our mailing list for updates on workshops, progress in related research and publications!</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/publications/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/</guid>
+      <description>Frank K. 2000. Impact of a Confounding Variable on the Inference of a Regression Coefficient. Sociological Methods and Research, 29(2), 147-194.
+ Frank, K. A., Sykes, G., Anagnostopoulos, D., Cannata, M., Chard, L., Krause, A., &amp;amp; McCrory, R. (2008). Does NBPTS certification affect the number of colleagues a teacher helps with instructional matters?. Educational Evaluation and Policy Analysis, 30(1), 3-30.
+ Frank, K. A., Maroulis, S. J., Duong, M.</description>
     </item>
     
     <item>
@@ -71,7 +103,7 @@ Click here to join our mailing list for updates on workshops, progress in relate
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/contact/</guid>
-      <description>If you have any question or want to collaborate for a certain project, feel free to contact Dr. Ken Frank via email.</description>
+      <description>Have questions or suggestions? Feel free to contact Dr. Ken Frank via email or open an issue on GitHub.</description>
     </item>
     
     <item>
@@ -80,7 +112,7 @@ Click here to join our mailing list for updates on workshops, progress in relate
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/workshops/</guid>
-      <description> Past Workshops  Future Workshops  AERA Virtual Research Learning Seris, Tuesday, May 19th, 2020   </description>
+      <description> Past Workshops  Future Workshops  AERA Virtual Research Learning Series, Tuesday (May 19th), 1PM EST, 2020   </description>
     </item>
     
   </channel>

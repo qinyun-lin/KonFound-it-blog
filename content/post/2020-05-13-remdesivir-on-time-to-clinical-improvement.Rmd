@@ -1,0 +1,34 @@
+---
+title: ' Remdesivir on Time to Clinical Improvement'
+author: ''
+date: '2020-05-13'
+slug: remdesivir-on-time-to-clinical-improvement
+categories: []
+tags:
+  - COVID-19
+description: ''
+topics: []
+weight: 4
+---
+Now consider the previous example of Remdesivir but instead we are interested in the continuous outcome variable of time to clinical improvement.
+
+![**Figure 2. Time to clinical improvement in the Remdesivir example. **Data from Table 3, Wang et al (2020).](/post/2020-05-13-remdesivir-on-time-to-clinical-improvement_files/Fig 2.png){width=100%}
+
+We can interpret the robustness of inference regarding Remdesivir's effect on time to clinical improvement in following ways. 
+
+## Percent Bias Necessary to Invalidate the Inference
+To sustain an inference, $28.2\%$ of the estimate would have to be due to bias. This is based on a threshold of $1.713$ for statistical significance ($\alpha = 0.05$). To sustain an inference, $74$ of the cases with $0$ effect would have to be replaced with cases at the threshold of inference.
+
+## Impact Threshold for a Confounding Variable
+
+The maximum impact to sustain an inference for a null hypothesis of $0$ effect is based on a correlation of $0.174$ with the outcome and at $0.174$ with the predictor of interest (conditioning on observed covariates) based on a threshold of $1.713$ for statistical significance ($\alpha = 0.05$). Correspondingly the impact of an omitted variable (as defined in Frank 2000) must be $0.174 \times 0.174 = 0.03$ to sustain an inference for a null hypothesis of $0$ effect.
+
+## Using KonFound-it to reproduce the results
+
+Since the outcome is a continuous variable, we use pkonfound.
+```{r}
+konfound::pkonfound(est_eff = 1.23, 
+          std_err = .87, 
+          n_obs = 263, 
+          n_covariates = 0)
+```

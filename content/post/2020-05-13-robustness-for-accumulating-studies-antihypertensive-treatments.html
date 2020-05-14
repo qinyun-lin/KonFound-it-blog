@@ -1,0 +1,29 @@
+---
+title: 'Historical Example: Accumulation of Effects of Antihypertensive Treatments.'
+author: ''
+date: '2020-05-13'
+slug: robustness-for-accumulating-studies-antihypertensive-treatments
+categories: []
+tags:
+  - COVID-19
+description: ''
+topics: []
+weight: 5
+---
+
+
+
+<p>Online dashboards, such as the <a href="http://www.covid-trials.org/">COVID-19 clinical trials registry</a>, provide near real-time tracking and categorization of findings accumulating across emerging research. As such one can update the robustness of the cumulative findings for a given COVID-19 treatment. We illustrate using a historical non-COVID example: the study-by-study accumulation of <span class="math inline">\(16\)</span> estimated effects presented in a meta-analysis of randomized trials examining the impact of hypertension treatments on the probability of suffering a stroke (data from <a href="https://www.ncbi.nlm.nih.gov/pubmed/1969567">Collins et al., 1990</a>).</p>
+<p>Table 1 presents the outcome data and the Robustness of the Inference to Switches (RIS) on patient strokes for the first and second studies in the hypertension meta-analysis. A positive RIS represents switches from “no stroke” to “stroke” for treatment cases; a negative RIS, from “stroke” to “no stroke.” If <span class="math inline">\(6\)</span> of the <span class="math inline">\(181\)</span> no stroke cases in the treatment group instead had strokes, the probability difference would be statistically significant at conventional levels (<span class="math inline">\(RIS=-6\)</span>) to favor a positive treatment effect. The second study found a statistically significant <span class="math inline">\(7.6\)</span> percentage point decrease in stroke probability for the treatment group, an inference that would take <span class="math inline">\(5\)</span> switches to invalidate <span class="math inline">\((RIS =+5)\)</span>. Combining the result from the first study with the finding from the second lowers the treatment benefit reporting in the second study from <span class="math inline">\(7.6%\)</span> to <span class="math inline">\(5.9%\)</span> but leaves the robustness of the inference from the second study largely unchanged (Year <span class="math inline">\(1967\)</span>, Combined <span class="math inline">\(N=467\)</span>, <span class="math inline">\(RIS = +4\)</span> instead of <span class="math inline">\(+5\)</span>).</p>
+<div class="figure">
+<img src="/post/2020-05-13-robustness-for-accumulating-studies-antihypertensive-treatments_files/Screen%20Shot%202020-05-13%20at%2011.11.39%20PM.png" alt="Table 1. Association between antihypertensive treatment and stroke. Control, treatment, and total contain number of cases from Table II of Collins et al.3 Remaining columns based on authors’ calculations. RIS=Robustness of Inference to Switches." style="width:100.0%" />
+<p class="caption"><strong>Table 1. Association between antihypertensive treatment and stroke.</strong> Control, treatment, and total contain number of cases from Table II of Collins et al.3 Remaining columns based on authors’ calculations. RIS=Robustness of Inference to Switches.</p>
+</div>
+<p>In Figure 1 we present a series of “robustness” updates as each study is added, where each subsequent point presents an updated estimated effect as well as corresponding RIS. Note that even after updating the estimated treatment effect with multiple studies (Years <span class="math inline">\(1966\)</span> to <span class="math inline">\(1977\)</span>), the combined estimate still fluctuates by several percentage points until the 8th study is added (Year=<span class="math inline">\(1979\)</span>). This again underscores the importance of considering the robustness of inferences beyond only examining p-values, even for accumulated estimates obtained from RCTs. Continuous updates to an analagous figure using COVID-19 studies would present decision-makers with an up-to-date and intuitive characterization of combined estimates as well as the robustness of the inferences drawn from scientific evidence.</p>
+<div class="figure">
+<img src="/post/2020-05-13-robustness-for-accumulating-studies-antihypertensive-treatments_files/Fig2_0430.png" alt="Figure 1. Robustness of Inferences to Switches as Evidence Accumulates: Historical Case of Anti-hypertension Treatment and Stroke. Black squares indicate the size of the estimated treatment effect based on all studies available up to that point in time; blue dots, the effect size just below (above) statistical significance. Up arrow indicates direction of change necessary to make non-significant estimate, significant; down arrow, a significant estimate, not significant. Boxes label the corresponding RIS." style="width:100.0%" />
+<p class="caption"><strong>Figure 1. Robustness of Inferences to Switches as Evidence Accumulates: Historical Case of Anti-hypertension Treatment and Stroke.</strong> Black squares indicate the size of the estimated treatment effect based on all studies available up to that point in time; blue dots, the effect size just below (above) statistical significance. Up arrow indicates direction of change necessary to make non-significant estimate, significant; down arrow, a significant estimate, not significant. Boxes label the corresponding RIS.</p>
+</div>
+<div id="using-konfound-it-to-reproduce-the-results-coming-soon" class="section level2">
+<h2>Using KonFound-it! to reproduce the results (coming soon)</h2>
+</div>

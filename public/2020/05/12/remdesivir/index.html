@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.70.0" />
 
-  <title>Remdesivir on mortality &middot; KonFound-it</title>
+  <title>Remdesivir on Mortality &middot; KonFound-it!</title>
 
     
 
@@ -69,7 +69,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">KonFound-it</a>
+  <a class="pure-menu-heading brand" href="/">KonFound-it!</a>
 
 
   <div class="pure-menu">
@@ -90,6 +90,12 @@
       
         <li class="pure-menu-item">
           <a class="pure-menu-link" href="/workshops/"><i class='fa fa-book fa-fw'></i>Workshops</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/publications/"><i class='fa fa-book fa-fw'></i>Publications</a>
       
         </li>
       
@@ -214,7 +220,7 @@
 
 
 <div class="header">
-  <h1>Remdesivir on mortality</h1>
+  <h1>Remdesivir on Mortality</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -258,8 +264,8 @@ Figure 1 places these results in a larger context by plotting the change in effe
 <img src="/post/2020-05-09-remdesivir_files/Fig_Rem.png" alt="Figure 1. Decrease in probability of mortality for treatment group after hypothetically switching treatment survival cases to treatment death.Black square, study estimate; top dashed line, positive estimate significant at 5\% level; bottom dashed line, negative estimate significant at 5\% level." style="width:90.0%" />
 <p class="caption"><strong>Figure 1. Decrease in probability of mortality for treatment group after hypothetically switching treatment survival cases to treatment death.</strong>Black square, study estimate; top dashed line, positive estimate significant at <span class="math inline">\(5\%\)</span> level; bottom dashed line, negative estimate significant at <span class="math inline">\(5\%\)</span> level.</p>
 </div>
-<div id="konfound-remdesivir-on-mortality" class="section level2">
-<h2>konfound: Remdesivir on mortality</h2>
+<div id="using-konfound-it-to-reproduce-the-results" class="section level2">
+<h2>Using KonFound-it! to reproduce the results</h2>
 <p>Now let’s see how to use R package konfound to reproduce the results.</p>
 <p>Similar to the HCQ example, we have a <span class="math inline">\(2 \times2\)</span> table in this Remdesivir example. Accordingly, we use tkonfound function to calculates the number of cases (RIS) that would have to be switched from one cell to another of a <span class="math inline">\(2 \times2\)</span> table to invalidate an inference made about the association between the rows and columns.</p>
 <pre class="r"><code>konfound::tkonfound(a = 10, b = 68, c = 22, d= 136)</code></pre>
@@ -302,13 +308,13 @@ Figure 1 places these results in a larger context by plotting the change in effe
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="/2020/05/12/a-short-talk/"><i class="fa fa-chevron-left"></i></a>
+    <a href="/2020/05/13/remdesivir-on-time-to-clinical-improvement/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="/2020/05/12/a-short-talk/">A 12-min talk</a>
+      <a href="/2020/05/13/remdesivir-on-time-to-clinical-improvement/"> Remdesivir on Time to Clinical Improvement</a>
     </nav>
     
   </div>

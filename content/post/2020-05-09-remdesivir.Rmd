@@ -1,5 +1,5 @@
 ---
-title: Remdesivir on mortality
+title: Remdesivir on Mortality
 author: ''
 date: '2020-05-12'
 tags:
@@ -16,7 +16,7 @@ Figure 1 places these results in a larger context by plotting the change in effe
 
 ![**Figure 1. Decrease in probability of mortality for treatment group after hypothetically switching treatment survival cases to treatment death.**Black square, study estimate; top dashed line, positive estimate significant at $5\%$ level; bottom dashed line, negative estimate significant at $5\%$ level.](/post/2020-05-09-remdesivir_files/Fig_Rem.png){width=90%}
 
-## konfound: Remdesivir on mortality
+## Using KonFound-it! to reproduce the results
 Now let's see how to use R package konfound to reproduce the results. 
 
 Similar to the HCQ example, we have a $2 \times2$ table in this Remdesivir example. Accordingly, we use tkonfound function to calculates the number of cases (RIS) that would have to be switched from one cell to another of a $2 \times2$ table to invalidate an inference made about the association between the rows and columns.

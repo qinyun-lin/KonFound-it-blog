@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>COVID-19 on KonFound-it</title>
+    <title>COVID-19 on KonFound-it!</title>
     <link>/tags/covid-19/</link>
-    <description>Recent content in COVID-19 on KonFound-it</description>
+    <description>Recent content in COVID-19 on KonFound-it!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/covid-19/index.xml" rel="self" type="application/rss+xml" />
     
@@ -34,13 +34,34 @@ Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments
     </item>
     
     <item>
-      <title>Remdesivir on mortality</title>
+      <title>Remdesivir on Mortality</title>
       <link>/2020/05/12/remdesivir/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/05/12/remdesivir/</guid>
       <description>Consider the recent randomized double-blind, placebo-controlled trial of Remdesivir for patients with severe COVID-19. The study found no discernable difference in mortality: Twenty-two of \(158\) (\(14\%\)) Remdesivir patients died within \(28\) days while \(10\) of \(78\) (\(13\%\)) in the placebo group died (Table 1). How different would the results have to be in the current study to change statistical inference about Remdesivir?
 Table 1. Comparison of Remdesivir vs Placebo Control on Mortality.</description>
+    </item>
+    
+    <item>
+      <title> Remdesivir on Time to Clinical Improvement</title>
+      <link>/2020/05/13/remdesivir-on-time-to-clinical-improvement/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/13/remdesivir-on-time-to-clinical-improvement/</guid>
+      <description>Now consider the previous example of Remdesivir but instead we are interested in the continuous outcome variable of time to clinical improvement.
+Figure 2. Time to clinical improvement in the Remdesivir example. Data from Table 3, Wang et al (2020).
+ We can interpret the robustness of inference regarding Remdesivir’s effect on time to clinical improvement in following ways.
+Percent Bias Necessary to Invalidate the Inference To sustain an inference, \(28.</description>
+    </item>
+    
+    <item>
+      <title>Historical Example: Accumulation of Effects of Antihypertensive Treatments.</title>
+      <link>/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/</guid>
+      <description>Online dashboards, such as the COVID-19 clinical trials registry, provide near real-time tracking and categorization of findings accumulating across emerging research. As such one can update the robustness of the cumulative findings for a given COVID-19 treatment. We illustrate using a historical non-COVID example: the study-by-study accumulation of \(16\) estimated effects presented in a meta-analysis of randomized trials examining the impact of hypertension treatments on the probability of suffering a stroke (data from Collins et al.</description>
     </item>
     
   </channel>
