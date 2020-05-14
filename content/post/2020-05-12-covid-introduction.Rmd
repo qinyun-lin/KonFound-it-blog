@@ -1,11 +1,11 @@
 ---
-title: COVID Introduction
-author: ''
+title: Why is robustness important for emerging COVID-19 studies?
+author: 'COVID team'
 date: '2020-05-12'
 tags:
   - COVID-19
 slug: covid-introduction
-weight: 1
+weight: 2
 ---
 As those who work in public policy and health, we seek to help a broad range of people, with a broad range of statistical backgrounds, interpret uncertainty about public health findings regarding COVID-19.  We observe that currently, there is little common language for expressing uncertainty. Consider Anthony Fauci’s quote (as in Healio on April 29): 
 
@@ -23,5 +23,5 @@ See other posts for illustrative examples. Click here for working paper further 
 
 [Remdesivir.](https://www.konfound-it.org/2020/05/12/remdesivir/) Data from an April 29, 2020 study published in The Lancet of a double-blind, placebo-controlled randomized trial of Remdesivir as a treatment for COVID-19. Includes example of calculating robustness for mortality, as well as time to clinical improvement (continuous measure).
 
-Robustnesss for accumulating studies: antihypertensive treatments (coming soon). As studies emergent one can update the robustness of the cumulative findings for a given treatment. We illustrate using a historical non-COVID example: the study-by-study accumulation of 16 estimated effects presented in a meta-analysis of randomized trials examining the impact of hypertension treatments on the probability of suffering a stroke. 
+[Robustnesss for accumulating studies: antihypertensive treatments](https://www.konfound-it.org/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/). As studies emergent one can update the robustness of the cumulative findings for a given treatment. We illustrate using a historical non-COVID example: the study-by-study accumulation of 16 estimated effects presented in a meta-analysis of randomized trials examining the impact of hypertension treatments on the probability of suffering a stroke. 
 

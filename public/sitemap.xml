@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2020/05/12/covid-introduction/</loc>
-    <lastmod>2020-05-12T00:00:00+00:00</lastmod>
+    <loc>/2020/05/14/welcome/</loc>
+    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/2020/05/12/hcq/</loc>
+    <lastmod>2020-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/05/12/covid-introduction/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,6 +33,11 @@
   </url>
   
   <url>
+    <loc>/post/</loc>
+    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
   </url>
@@ -39,11 +49,6 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
   </url>
   

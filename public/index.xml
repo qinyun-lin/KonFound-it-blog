@@ -13,13 +13,12 @@
     
     
     <item>
-      <title>COVID Introduction</title>
-      <link>/2020/05/12/covid-introduction/</link>
-      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      <title>Welcome! </title>
+      <link>/2020/05/14/welcome/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/05/12/covid-introduction/</guid>
-      <description>As those who work in public policy and health, we seek to help a broad range of people, with a broad range of statistical backgrounds, interpret uncertainty about public health findings regarding COVID-19. We observe that currently, there is little common language for expressing uncertainty. Consider Anthony Fauci’s quote (as in Healio on April 29):
-“The trial, which began Feb. 21 this year, compared remdesivir with placebo in more than \(1,000\) patients.</description>
+      <guid>/2020/05/14/welcome/</guid>
+      <description>Welcome to our discussion about sensitivity analysis. All of the assumptions of statistical analysis rarely hold. So the challenge for the pragmatist is to understand when evidence is strong enough to support action. That’s where sensitivity analysis comes in – so we can understand how robust our inferences are to challenges to our assumptions. One example is statements such as “XX% of the estimated effect would have to be due to bias to change your inference about the effect.</description>
     </item>
     
     <item>
@@ -31,6 +30,16 @@
       <description>The first report of a randomized trial regarding hydroxychloroquine (HCQ) came from a study conducted at the Renmin Hospital of Wuhan University. The table below shows the association between treatment (HCQ vs conventional) and condition (improved vs exacerbated/ucnhanged). For Table 1, \(χ^2= 4.7\), \(p = 0.03\), and the authors concluded that HCQ was efficacious.
 Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments and Pneumonia on Chest CT
  To quantify the robustness of the inference, we calculate the number of treatment cases that would need to be switched from “improved” to “exacerbated or unchanged” to change the inference – a quantity we refer to as the Robustness of the Inference to Switches (RIS).</description>
+    </item>
+    
+    <item>
+      <title>Why is robustness important for emerging COVID-19 studies?</title>
+      <link>/2020/05/12/covid-introduction/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/12/covid-introduction/</guid>
+      <description>As those who work in public policy and health, we seek to help a broad range of people, with a broad range of statistical backgrounds, interpret uncertainty about public health findings regarding COVID-19. We observe that currently, there is little common language for expressing uncertainty. Consider Anthony Fauci’s quote (as in Healio on April 29):
+“The trial, which began Feb. 21 this year, compared remdesivir with placebo in more than \(1,000\) patients.</description>
     </item>
     
     <item>
