@@ -1,11 +1,11 @@
 ---
-title: HCQ on Pneumonia
+title: First hydroxychloroquine RCT not very robust!
 author: ''
 date: '2020-05-12'
 tags:
   - COVID-19
 slug: hcq
-weight: 2
+weight: 3
 ---
 
 
@@ -17,9 +17,8 @@ For Table 1, <span class="math inline">\(χ^2= 4.7\)</span>, <span class="math i
 <p class="caption"><strong>Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments and Pneumonia on Chest CT</strong></p>
 </div>
 <p>To quantify the robustness of the inference, we calculate the number of treatment cases that would need to be switched from “improved” to “exacerbated or unchanged” to change the inference – a quantity we refer to as the Robustness of the Inference to Switches (RIS). We calculate that if one of the 25 HCQ “improved” cases were instead classified as “excacerbated or unchanged” (RIS=1), the probability difference between HCQ and the control would drop to <span class="math inline">\(23\)</span> percentage points (<span class="math inline">\(\frac{24}{31} - \frac{17}{31}=.23\)</span>) and would no longer be statistically significant (<span class="math inline">\(χ^2 = 3.5\)</span>, <span class="math inline">\(p &gt; .06\)</span>).</p>
-<div id="konfound-remdesivir-on-mortality" class="section level2">
-<h2>konfound: Remdesivir on mortality</h2>
-<p>Now let’s see how to use R package konfound to reproduce the results.</p>
+<div id="using-konfound-it-to-reproduce-the-results." class="section level2">
+<h2>Using KonFound-it to reproduce the results.</h2>
 <p>Since we have a <span class="math inline">\(2 \times2\)</span> table, we use tkonfound function to calculates the number of cases (RIS) that would have to be switched from one cell to another of a <span class="math inline">\(2 \times2\)</span> table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.</p>
 <pre class="r"><code>konfound::tkonfound(a = 14, b = 17, c = 6, d= 25)</code></pre>
 <pre><code>## [[1]]

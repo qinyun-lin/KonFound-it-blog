@@ -1,0 +1,15 @@
+---
+title: KonFound-it in R
+author: ''
+date: '2020-05-14'
+slug: konfound-it-in-r
+categories: []
+tags: []
+description: ''
+topics: []
+---
+You can find **KonFound-it! R Shiny** [here](https://jmichaelrosenberg.shinyapps.io/konfound-it/) (friendly for phone users)!
+
+You can find information about **konfound R package** [here](https://github.com/jrosen48/konfound).
+
+Happy KonFound-it!

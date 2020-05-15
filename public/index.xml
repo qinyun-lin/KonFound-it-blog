@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,17 +22,6 @@
     </item>
     
     <item>
-      <title>HCQ on Pneumonia</title>
-      <link>/2020/05/12/hcq/</link>
-      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/05/12/hcq/</guid>
-      <description>The first report of a randomized trial regarding hydroxychloroquine (HCQ) came from a study conducted at the Renmin Hospital of Wuhan University. The table below shows the association between treatment (HCQ vs conventional) and condition (improved vs exacerbated/ucnhanged). For Table 1, \(χ^2= 4.7\), \(p = 0.03\), and the authors concluded that HCQ was efficacious.
-Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments and Pneumonia on Chest CT
- To quantify the robustness of the inference, we calculate the number of treatment cases that would need to be switched from “improved” to “exacerbated or unchanged” to change the inference – a quantity we refer to as the Robustness of the Inference to Switches (RIS).</description>
-    </item>
-    
-    <item>
       <title>Why is robustness important for emerging COVID-19 studies?</title>
       <link>/2020/05/12/covid-introduction/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
@@ -40,6 +29,17 @@ Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments
       <guid>/2020/05/12/covid-introduction/</guid>
       <description>As those who work in public policy and health, we seek to help a broad range of people, with a broad range of statistical backgrounds, interpret uncertainty about public health findings regarding COVID-19. We observe that currently, there is little common language for expressing uncertainty. Consider Anthony Fauci’s quote (as in Healio on April 29):
 “The trial, which began Feb. 21 this year, compared remdesivir with placebo in more than \(1,000\) patients.</description>
+    </item>
+    
+    <item>
+      <title>First hydroxychloroquine RCT not very robust!</title>
+      <link>/2020/05/12/hcq/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/12/hcq/</guid>
+      <description>The first report of a randomized trial regarding hydroxychloroquine (HCQ) came from a study conducted at the Renmin Hospital of Wuhan University. The table below shows the association between treatment (HCQ vs conventional) and condition (improved vs exacerbated/ucnhanged). For Table 1, \(χ^2= 4.7\), \(p = 0.03\), and the authors concluded that HCQ was efficacious.
+Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments and Pneumonia on Chest CT
+ To quantify the robustness of the inference, we calculate the number of treatment cases that would need to be switched from “improved” to “exacerbated or unchanged” to change the inference – a quantity we refer to as the Robustness of the Inference to Switches (RIS).</description>
     </item>
     
     <item>
@@ -65,12 +65,23 @@ Percent Bias Necessary to Invalidate the Inference To sustain an inference, \(28
     </item>
     
     <item>
-      <title>Historical Example: Accumulation of Effects of Antihypertensive Treatments.</title>
+      <title>What do we do as more studies come out?</title>
       <link>/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/</guid>
       <description>Online dashboards, such as the COVID-19 clinical trials registry, provide near real-time tracking and categorization of findings accumulating across emerging research. As such one can update the robustness of the cumulative findings for a given COVID-19 treatment. We illustrate using a historical non-COVID example: the study-by-study accumulation of \(16\) estimated effects presented in a meta-analysis of randomized trials examining the impact of hypertension treatments on the probability of suffering a stroke (data from Collins et al.</description>
+    </item>
+    
+    <item>
+      <title>KonFound-it in R</title>
+      <link>/konfound-it-in-r/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/konfound-it-in-r/</guid>
+      <description>You can find KonFound-it! R Shiny here (friendly for phone users)!
+You can find information about konfound R package here.
+Happy KonFound-it!</description>
     </item>
     
     <item>
@@ -81,9 +92,8 @@ Percent Bias Necessary to Invalidate the Inference To sustain an inference, \(28
       <guid>/about/</guid>
       <description>We are a group of researchers, led by Dr. Ken Frank, who would like to contribute to better communications of research inferences/findings.
 Our group includes:
- Dr. Ken Frank Dr. Spiro Maroulis Dr. Ran Xu Dr. Qinyun Lin Dr. Joshua Rosenberg  You can find KonFound-it! R Shiny here (friendly for phone users)!
-You can find information about konfound R package here.
-Click here to join our mailing list for updates on workshops, progress in related research and publications!</description>
+ Dr. Ken Frank Dr. Spiro Maroulis Dr. Ran Xu Dr. Qinyun Lin Dr. Joshua Rosenberg  Click here to join our mailing list for updates on workshops, progress in related research and publications!
+Have questions or suggestions? Feel free to contact Dr. Ken Frank via email or open an issue on GitHub.</description>
     </item>
     
     <item>
