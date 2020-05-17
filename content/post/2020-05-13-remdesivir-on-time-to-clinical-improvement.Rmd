@@ -1,5 +1,5 @@
 ---
-title: ' Remdesivir on Time to Clinical Improvement'
+title: 'From early RCT: robust inference of Remdesivir effect on time to clinical improvement'
 author: 'COVID team'
 date: '2020-05-13'
 slug: remdesivir-on-time-to-clinical-improvement
@@ -16,19 +16,20 @@ Now consider the previous example of Remdesivir but instead we are interested in
 
 We can interpret the robustness of inference regarding Remdesivir's effect on time to clinical improvement in following ways. 
 
-## Percent Bias Necessary to Invalidate the Inference
-To sustain an inference, $28.2\%$ of the estimate would have to be due to bias. This is based on a threshold of $1.713$ for statistical significance ($\alpha = 0.05$). To sustain an inference, $74$ of the cases with $0$ effect would have to be replaced with cases at the threshold of inference.
+## Percent bias necessary to invalidate the inference
 
-## Impact Threshold for a Confounding Variable
+To invalidate an inference, $70.544\%$ of the estimate would have to be due to bias. This is based on a threshold of $0.362$ for statistical significance ($\alpha = 0.05$). To invalidate an inference, $186$ of the observations would have to be replaced with cases for which the effect is $0$.
 
-The maximum impact to sustain an inference for a null hypothesis of $0$ effect is based on a correlation of $0.174$ with the outcome and at $0.174$ with the predictor of interest (conditioning on observed covariates) based on a threshold of $1.713$ for statistical significance ($\alpha = 0.05$). Correspondingly the impact of an omitted variable (as defined in Frank 2000) must be $0.174 \times 0.174 = 0.03$ to sustain an inference for a null hypothesis of $0$ effect.
+## Impact threshold for a confounding variable
+
+The minimum impact to invalidate an inference for a null hypothesis of $0$ effect is based on a correlation of $0.546$ with the outcome and at $0.546$ with the predictor of interest (conditioning on observed covariates) based on a threshold of $0.121$ for statistical significance ($\alpha = 0.05$). Correspondingly the impact of an omitted variable (as defined in Frank 2000) must be $0.546 \times 0.546 = 0.298$ to invalidate an inference for a null hypothesis of $0$ effect.
 
 ## Using KonFound-it to reproduce the results
 
 Since the outcome is a continuous variable, we use pkonfound.
 ```{r}
 konfound::pkonfound(est_eff = 1.23, 
-          std_err = .87, 
+          std_err = .184, 
           n_obs = 263, 
           n_covariates = 0)
 ```

@@ -1,5 +1,5 @@
 ---
-title: ' Remdesivir on Time to Clinical Improvement'
+title: 'From early RCT: robust inference of Remdesivir effect on time to clinical improvement'
 author: 'COVID team'
 date: '2020-05-13'
 slug: remdesivir-on-time-to-clinical-improvement
@@ -20,28 +20,28 @@ weight: 4
 </div>
 <p>We can interpret the robustness of inference regarding Remdesivir’s effect on time to clinical improvement in following ways.</p>
 <div id="percent-bias-necessary-to-invalidate-the-inference" class="section level2">
-<h2>Percent Bias Necessary to Invalidate the Inference</h2>
-<p>To sustain an inference, <span class="math inline">\(28.2\%\)</span> of the estimate would have to be due to bias. This is based on a threshold of <span class="math inline">\(1.713\)</span> for statistical significance (<span class="math inline">\(\alpha = 0.05\)</span>). To sustain an inference, <span class="math inline">\(74\)</span> of the cases with <span class="math inline">\(0\)</span> effect would have to be replaced with cases at the threshold of inference.</p>
+<h2>Percent bias necessary to invalidate the inference</h2>
+<p>To invalidate an inference, <span class="math inline">\(70.544\%\)</span> of the estimate would have to be due to bias. This is based on a threshold of <span class="math inline">\(0.362\)</span> for statistical significance (<span class="math inline">\(\alpha = 0.05\)</span>). To invalidate an inference, <span class="math inline">\(186\)</span> of the observations would have to be replaced with cases for which the effect is <span class="math inline">\(0\)</span>.</p>
 </div>
 <div id="impact-threshold-for-a-confounding-variable" class="section level2">
-<h2>Impact Threshold for a Confounding Variable</h2>
-<p>The maximum impact to sustain an inference for a null hypothesis of <span class="math inline">\(0\)</span> effect is based on a correlation of <span class="math inline">\(0.174\)</span> with the outcome and at <span class="math inline">\(0.174\)</span> with the predictor of interest (conditioning on observed covariates) based on a threshold of <span class="math inline">\(1.713\)</span> for statistical significance (<span class="math inline">\(\alpha = 0.05\)</span>). Correspondingly the impact of an omitted variable (as defined in Frank 2000) must be <span class="math inline">\(0.174 \times 0.174 = 0.03\)</span> to sustain an inference for a null hypothesis of <span class="math inline">\(0\)</span> effect.</p>
+<h2>Impact threshold for a confounding variable</h2>
+<p>The minimum impact to invalidate an inference for a null hypothesis of <span class="math inline">\(0\)</span> effect is based on a correlation of <span class="math inline">\(0.546\)</span> with the outcome and at <span class="math inline">\(0.546\)</span> with the predictor of interest (conditioning on observed covariates) based on a threshold of <span class="math inline">\(0.121\)</span> for statistical significance (<span class="math inline">\(\alpha = 0.05\)</span>). Correspondingly the impact of an omitted variable (as defined in Frank 2000) must be <span class="math inline">\(0.546 \times 0.546 = 0.298\)</span> to invalidate an inference for a null hypothesis of <span class="math inline">\(0\)</span> effect.</p>
 </div>
 <div id="using-konfound-it-to-reproduce-the-results" class="section level2">
 <h2>Using KonFound-it to reproduce the results</h2>
 <p>Since the outcome is a continuous variable, we use pkonfound.</p>
 <pre class="r"><code>konfound::pkonfound(est_eff = 1.23, 
-          std_err = .87, 
+          std_err = .184, 
           n_obs = 263, 
           n_covariates = 0)</code></pre>
 <pre><code>## Percent Bias Necessary to Invalidate the Inference:
-## To sustain an inference, 28.2% of the estimate would have to be due to bias. This is based on a threshold of 1.713 for statistical significance (alpha = 0.05).
-## To sustain an inference, 74 of the cases with 0 effect would have to be replaced with cases at the threshold of inference.
+## To invalidate an inference, 70.544% of the estimate would have to be due to bias. This is based on a threshold of 0.362 for statistical significance (alpha = 0.05).
+## To invalidate an inference, 186 observations would have to be replaced with cases for which the effect is 0.
 ## See Frank et al. (2013) for a description of the method
 ## Citation: Frank, K.A., Maroulis, S., Duong, M., and Kelcey, B. 2013. What would it take to change an inference? Using Rubin&#39;s causal model to interpret the robustness of causal inferences. Education, Evaluation and Policy Analysis, 35 437-460.
 ## Impact Threshold for a Confounding Variable:
-## The maximum impact to sustain an inference for a null hypothesis of 0 effect is based on a correlation of 0.174 with the outcome and at 0.174 with the predictor of interest (conditioning on observed covariates) based on a threshold of 1.713 for statistical significance (alpha = 0.05).
-## Correspondingly the impact of an omitted variable (as defined in Frank 2000) must be 0.174 X 0.174 = 0.03 to sustain an inference for a null hypothesis of 0 effect.
+## The minimum impact to invalidate an inference for a null hypothesis of 0 effect is based on a correlation of 0.546 with the outcome and at 0.546 with the predictor of interest (conditioning on observed covariates) based on a threshold of 0.121 for statistical significance (alpha = 0.05).
+## Correspondingly the impact of an omitted variable (as defined in Frank 2000) must be 0.546 X 0.546 = 0.298 to invalidate an inference for a null hypothesis of 0 effect.
 ## See Frank (2000) for a description of the method
 ## Citation: Frank, K. 2000. Impact of a confounding variable on the inference of a regression coefficient. Sociological Methods and Research, 29 (2), 147-194</code></pre>
 <pre><code>## For other forms of output, change `to_return` to table, raw_output, thres_plot, or corr_plot.</code></pre>
