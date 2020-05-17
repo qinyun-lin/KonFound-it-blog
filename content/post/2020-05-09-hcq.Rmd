@@ -1,5 +1,5 @@
 ---
-title: First hydroxychloroquine RCT not very robust!
+title: 'First example: Pneumonia finding from initial hydroxychloroquine RCT only requires 1 ‘switch’ to invalidate'
 author: ''
 date: '2020-05-12'
 tags:
