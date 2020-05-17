@@ -285,8 +285,8 @@
 <img src="/post/2020-05-13-robustness-for-accumulating-studies-antihypertensive-treatments_files/Fig2_0430.png" alt="Figure 1. Robustness of Inferences to Switches as Evidence Accumulates: Historical Case of Anti-hypertension Treatment and Stroke. Black squares indicate the size of the estimated treatment effect based on all studies available up to that point in time; blue dots, the effect size just below (above) statistical significance. Up arrow indicates direction of change necessary to make non-significant estimate, significant; down arrow, a significant estimate, not significant. Boxes label the corresponding RIS." style="width:100.0%" />
 <p class="caption"><strong>Figure 1. Robustness of Inferences to Switches as Evidence Accumulates: Historical Case of Anti-hypertension Treatment and Stroke.</strong> Black squares indicate the size of the estimated treatment effect based on all studies available up to that point in time; blue dots, the effect size just below (above) statistical significance. Up arrow indicates direction of change necessary to make non-significant estimate, significant; down arrow, a significant estimate, not significant. Boxes label the corresponding RIS.</p>
 </div>
-<div id="following-we-show-some-r-code-to-reproduce-figure-1" class="section level2">
-<h2>Following we show some R code to reproduce Figure 1</h2>
+<div id="for-advanced-users-following-we-show-some-r-code-to-reproduce-figure-1" class="section level3">
+<h3><strong>[For advanced users, following we show some R code to reproduce Figure 1]</strong></h3>
 <p>First we read in data where each row includes one row that one study was added. Each row includes the 4 cells in the cummulative 2 by 2 table. cumA is the cell for control failure, cumB for control success, cumC for treatment failure and cumD for treatment success.</p>
 <pre class="r"><code>data &lt;- read.csv(&quot;data1.csv&quot;, header=T)
 head(data)</code></pre>
@@ -312,7 +312,7 @@ devtools::install_github(&quot;jrosen48/konfound&quot;)
 ## the first study is speacial here.
 ## Because the observed effect is negative, accordingly the default of the function getswitch_chisq is to change it to negative significant. 
 ## But we want to see how far it is from the positive significant.
-## We use tkonfound_fig to get the solution and plug in the results here
+## We use tkonfound_fig(1, 41, 2, 43) to get the solution and plug in the results here
 data$switch[1] &lt;- -6
 data$perc[1] &lt;--6/(data$cumC[1]+data$cumD[1])
 data$pdif_thr[1] &lt;- 44/45-36/42
