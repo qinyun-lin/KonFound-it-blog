@@ -11,10 +11,20 @@ topics: []
 
 + [Frank K. 2000. Impact of a Confounding Variable on the Inference of a Regression Coefficient.  *Sociological Methods and Research, 29*(2), 147-194.](https://msu.edu/~kenfrank/papers/impact%20of%20a%20confounding%20variable.pdf)
 
-+ [Frank, K. A., and Min, K. (2007). Indices of Robustness for Sample Representation. *Sociological Methodology. 37*(1). 349-392. (co first authors.)](https://msu.edu/~kenfrank/papers/INDICES%20OF%20ROBUSTNESS%20TO%20CONCERNS%20REGARDING%20THE%20REPRESENTATIVENESS%20OF%20A%20SAMPLE.doc)
++ [Frank, K. A., & Min, K. (2007). Indices of Robustness for Sample Representation. *Sociological Methodology. 37*(1). 349-392. (equal first authors.)](https://msu.edu/~kenfrank/papers/INDICES%20OF%20ROBUSTNESS%20TO%20CONCERNS%20REGARDING%20THE%20REPRESENTATIVENESS%20OF%20A%20SAMPLE.doc)
+
++ [Pan, W., & Frank, K.A. (2004). "An Approximation to the Distribution of the Product of Two Dependent Correlation Coefficients." *Journal of Statistical Computation and Simulation, 74*(6), 419-443.](https://msu.edu/~kenfrank/papers/Final%20version%20of%20paper%20%20CSCS%20%233050.pdf)
+
++ [Pan, W., & Frank, K.A. (2004). "A probability index of the robustness of a causal inference," *Journal of Educational and Behavioral Statistics, 28*(4), 315-337.](https://msu.edu/~kenfrank/papers/jebs%20with%20wei.doc)
 
 + [Frank, K. A., Sykes, G., Anagnostopoulos, D., Cannata, M., Chard, L., Krause, A., & McCrory, R. (2008). Does NBPTS certification affect the number of colleagues a teacher helps with instructional matters?. *Educational Evaluation and Policy Analysis, 30*(1), 3-30.](https://msu.edu/~kenfrank/papers/Does%20NBPTS%20Certification%20Affect%20the%20Number%20of%20Colleagues%20a%20Teacher%20Helps%20with%20Instructional%20Matters%20acceptance%20version%202.doc)
 
 + [Frank, K. A., Maroulis, S. J., Duong, M. Q., & Kelcey, B. M. (2013). What would it take to change an inference? Using Rubin’s causal model to interpret the robustness of causal inferences. *Educational Evaluation and Policy Analysis, 35*(4), 437-460.](https://msu.edu/~kenfrank/What%20would%20it%20take%20to%20Change%20an%20Inference%20published.docx)
+
++ [Xu, R., Frank, K. A., Maroulis, S. J., & Rosenberg, J. M. (2019). konfound: Command to quantify robustness of causal inferences. *The Stata Journal, 19*(3), 523–550. https://doi.org/10.1177/1536867X19874223](https://journals.sagepub.com/doi/10.1177/1536867X19874223#articleCitationDownloadContainer)
+
++ [Li, T., & Frank, K. (2020). The probability of a robust inference for internal validity. *Sociological Methods & Research.* https://doi.org/10.1177/0049124120914922](https://journals.sagepub.com/doi/pdf/10.1177/0049124120914922?casa_token=5ZKtvOa2M3oAAAAA:r3cCzHetyls_uLvfDi57mxaNLqDtYQ5Q1Hp17vQdqJ_Az4TN7SKbusIUVoSI-IjuZ12r7bes1WI)
+
+
 
 
