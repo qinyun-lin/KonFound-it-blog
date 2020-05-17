@@ -64,10 +64,20 @@ post = "/:year/:month/:day/:slug"
     weight = 6
     url = "/contact/"
    [[menu.main]]
-    name = "KonFound-it in R"
+    name = "KonFound-it app"
     pre = "<i class='fa fa-star fa-fw'></i>"
     weight = 7
-    url = "/konfound-it-in-r/"
+    url = "https://jmichaelrosenberg.shinyapps.io/konfound-it/"
+    [[menu.main]]
+    name = "KonFound-it R"
+    pre = "<i class='fa fa-star fa-fw'></i>"
+    weight = 8
+    url = "https://github.com/jrosen48/konfound/"
+    [[menu.main]]
+    name = "KonFound-it Stata"
+    pre = "<i class='fa fa-star fa-fw'></i>"
+    weight = 9
+    url = "https://journals.sagepub.com/doi/10.1177/1536867X19874223"
 
 [social]
   # Link your social networking accouns to the side menu
