@@ -273,8 +273,67 @@
 <img src="/post/2020-05-13-robustness-for-accumulating-studies-antihypertensive-treatments_files/Fig2_0430.png" alt="Figure 1. Robustness of Inferences to Switches as Evidence Accumulates: Historical Case of Anti-hypertension Treatment and Stroke. Black squares indicate the size of the estimated treatment effect based on all studies available up to that point in time; blue dots, the effect size just below (above) statistical significance. Up arrow indicates direction of change necessary to make non-significant estimate, significant; down arrow, a significant estimate, not significant. Boxes label the corresponding RIS." style="width:100.0%" />
 <p class="caption"><strong>Figure 1. Robustness of Inferences to Switches as Evidence Accumulates: Historical Case of Anti-hypertension Treatment and Stroke.</strong> Black squares indicate the size of the estimated treatment effect based on all studies available up to that point in time; blue dots, the effect size just below (above) statistical significance. Up arrow indicates direction of change necessary to make non-significant estimate, significant; down arrow, a significant estimate, not significant. Boxes label the corresponding RIS.</p>
 </div>
-<div id="using-konfound-it-to-reproduce-the-results-coming-soon" class="section level2">
-<h2>Using KonFound-it! to reproduce the results (coming soon)</h2>
+<div id="following-we-show-some-r-code-to-reproduce-figure-1" class="section level2">
+<h2>Following we show some R code to reproduce Figure 1</h2>
+<p>First we read in data where each row includes one row that one study was added. Each row includes the 4 cells in the cummulative 2 by 2 table. cumA is the cell for control failure, cumB for control success, cumC for treatment failure and cumD for treatment success.</p>
+<pre class="r"><code>data &lt;- read.csv(&quot;data1.csv&quot;, header=T)
+head(data)</code></pre>
+<pre><code>##    study_name reference_num year X A._CF B_CS C_TF D._TS cumA cumB cumC cumD
+## 1       Wolff            11 1966 3     1   41    2    43    1   41    2   43
+## 2          Va            10 1967 2    20  174    5   181   21  215    7  224
+## 3          VA            10 1967 3     3   60    1    67   24  275    8  291
+## 4      Carter            41 1970 3    21   27   10    39   45  302   18  330
+## 5 Barraclough            38 1973 3     0   58    0    58   45  360   18  388
+## 6       HSCSG            36 1974 2    52  167   43   190   97  527   61  578
+##    cum_odds
+## 1 0.5243902
+## 2 3.1255814
+## 3 3.1745455
+## 4 2.7317881
+## 5 2.6944444
+## 6 1.7440508</code></pre>
+<p>Now we can do analysis and plot the figure.</p>
+<pre class="r"><code>#install and library konfound
+install.packages(&quot;devtools&quot;)
+devtools::install_github(&quot;jrosen48/konfound&quot;)
+# run the analysis for each study 
+## the first study is speacial here.
+## Because the observed effect is negative, accordingly the default of the function getswitch_chisq is to change it to negative significant. 
+## But we want to see how far it is from the positive significant.
+## We use tkonfound_fig to get the solution and plug in the results here
+data$switch[1] &lt;- -6
+data$perc[1] &lt;--6/(data$cumC[1]+data$cumD[1])
+data$pdif_thr[1] &lt;- 44/45-36/42
+## run analysis for all other accumalative studies
+for (i in 2:16){
+ solution &lt;- getswitch_chisq(data$cumA[i], data$cumB[i], data$cumC[i], data$cumD[i])
+ data$switch[i] &lt;- solution$total_switch
+ data$pdif[i] &lt;- data$cumD[i]/(data$cumD[i]+data$cumC[i])-data$cumB[i]/(data$cumA[i]+data$cumB[i])
+ data$perc[i] &lt;- data$switch[i]/(data$cumC[i]+data$cumD[i])
+ final_table &lt;- solution$Transfer_Table
+ data$pdif_thr[i] &lt;- final_table[2,2]/(final_table[2,1]+final_table[2,2])-final_table[1,2]/(final_table[1,1]+final_table[1,2])
+ data$oder[i] &lt;- i
+ data$samplesize[i] &lt;- data$cumA[i] + data$cumB[i] + data$cumC[i] + data$cumD[i]
+}
+# now we plot the figure
+data$xaxis &lt;- paste(data$year,&quot;\n(&quot;,data$samplesize,&quot;)&quot;,sep = &quot;&quot;)
+library(ggplot2)
+ggplot(data, aes(x=oder,y=pdif))+
+  geom_line(aes(y=pdif), size = 1) +
+  geom_point(aes(y=pdif), shape = 16, size = 4)+
+  ggplot2::geom_linerange(ggplot2::aes(ymin=pdif_thr,ymax=pdif), linetype = &quot;dashed&quot;)+
+  ggplot2::geom_point(aes(y=pdif_thr),shape = 21, fill=&quot;blue&quot;,size=4)+
+  #ggplot2::scale_fill_manual(values=&quot;blue&quot;)+
+  ggplot2::geom_label(ggplot2::aes(label=switch), nudge_y =- (data$pdif-data$pdif_thr)/2)+
+  scale_x_continuous(name=&quot;Year of Update (Cumulative Sample Size)&quot;, breaks= seq(1,16,by=1),labels=data$xaxis) +
+  ggplot2::scale_y_continuous(name=&quot;Decrease in the Probability of Stroke due to Treatment&quot;)+
+  theme(#axis.title = element_text(size = 18),
+        #axis.text = element_text(size = 16),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = &quot;black&quot;),
+        legend.position = &quot;none&quot;)</code></pre>
 </div>
 
   

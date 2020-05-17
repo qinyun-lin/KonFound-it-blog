@@ -15,6 +15,7 @@ Our group includes:
 * [Dr. Qinyun Lin](https://spatial.uchicago.edu/directories/full/team)
 * [Dr. Joshua Rosenberg](https://joshuamrosenberg.com/)
 
+
 Click [here](https://groups.google.com/forum/#!forum/konfound-it) to join our mailing list for updates on workshops, progress in related research and publications!
 
 Have questions or suggestions? Feel free to contact Dr. Ken Frank via [email](mailto:kenfrank@msu.com) or [open an issue on GitHub](https://github.com/linqinyu/KonFound-blog/issues/new).
