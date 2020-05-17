@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>COVID-19 on KonFound-it!</title>
-    <link>/tags/covid-19/</link>
-    <description>Recent content in COVID-19 on KonFound-it!</description>
+    <title>nonlinear on KonFound-it!</title>
+    <link>/tags/nonlinear/</link>
+    <description>Recent content in nonlinear on KonFound-it!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/covid-19/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/nonlinear/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Why is robustness important for emerging COVID-19 studies?</title>
-      <link>/2020/05/12/covid-introduction/</link>
-      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/05/12/covid-introduction/</guid>
-      <description>As those who work in public policy and health, we seek to help a broad range of people, with a broad range of statistical backgrounds, interpret uncertainty about public health findings regarding COVID-19. We observe that currently, there is little common language for expressing uncertainty. Consider Anthony Fauci’s quote (as in Healio on April 29):
-“The trial, which began Feb. 21 this year, compared remdesivir with placebo in more than \(1,000\) patients.</description>
-    </item>
     
     <item>
       <title>First example: Pneumonia finding from initial hydroxychloroquine RCT only requires 1 ‘switch’ to invalidate</title>
@@ -41,18 +31,6 @@ Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments
       <guid>/2020/05/12/remdesivir/</guid>
       <description>Consider the recent randomized double-blind, placebo-controlled trial of Remdesivir for patients with severe COVID-19. The study found no discernable difference in mortality: Twenty-two of \(158\) (\(14\%\)) Remdesivir patients died within \(28\) days while \(10\) of \(78\) (\(13\%\)) in the placebo group died (Table 1). How different would the results have to be in the current study to change statistical inference about Remdesivir?
 Table 1. Comparison of Remdesivir vs Placebo Control on Mortality.</description>
-    </item>
-    
-    <item>
-      <title>From early RCT: robust inference of Remdesivir effect on time to clinical improvement</title>
-      <link>/2020/05/13/remdesivir-on-time-to-clinical-improvement/</link>
-      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/05/13/remdesivir-on-time-to-clinical-improvement/</guid>
-      <description>Now consider the previous example of Remdesivir but instead we are interested in the continuous outcome variable of time to clinical improvement.
-Figure 1. Time to clinical improvement in the Remdesivir example. Data from Table 3, Wang et al (2020).
- We can interpret the robustness of inference regarding Remdesivir’s effect on time to clinical improvement in following ways.
-Percent bias necessary to invalidate the inference To invalidate an inference, \(70.</description>
     </item>
     
     <item>

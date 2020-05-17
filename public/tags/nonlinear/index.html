@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.70.0" />
 
-  <title>First example: Pneumonia finding from initial hydroxychloroquine RCT only requires 1 ‘switch’ to invalidate &middot; KonFound-it!</title>
+  <title>nonlinear &middot; KonFound-it!</title>
 
     
 
@@ -41,6 +41,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  
+  
+  <link rel="alternate" type="application/rss+xml" title="KonFound-it!"
+    href='/tags/nonlinear/index.xml' />
   
 
   
@@ -135,6 +138,11 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href='/tags/nonlinear/index.xml'><i
+          class="fas fa-rss"></i>RSS</a>
+    </li>
     
 
     
@@ -238,12 +246,16 @@
 
 
 <div class="header">
-  <h1>First example: Pneumonia finding from initial hydroxychloroquine RCT only requires 1 ‘switch’ to invalidate</h1>
-  <h2></h2>
+  <h1>nonlinear</h1>
 </div>
-<div class="content">
 
-  <div class="post-meta">
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="/2020/05/12/hcq/">First example: Pneumonia finding from initial hydroxychloroquine RCT only requires 1 ‘switch’ to invalidate</a></h2>
+
+    <div class="post-meta">
 
   <div>
      
@@ -276,109 +288,172 @@
 
 </div>
 
-  
+  </header>
 
-
-<p>The <a href="https://www.medrxiv.org/content/medrxiv/early/2020/04/10/2020.03.22.20040758.full.pdf">first report of a randomized trial</a> regarding hydroxychloroquine (HCQ) came from a study conducted at the Renmin Hospital of Wuhan University. The table below shows the association between treatment (HCQ vs conventional) and condition (improved vs exacerbated/ucnhanged).
-For Table 1, <span class="math inline">\(χ^2= 4.7\)</span>, <span class="math inline">\(p = 0.03\)</span>, and the authors concluded that HCQ was efficacious.</p>
-<div class="figure">
-<img src="/post/2020-05-09-hcq_files/Table%201.png" alt="Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments and Pneumonia on Chest CT" style="width:90.0%" />
-<p class="caption"><strong>Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments and Pneumonia on Chest CT</strong></p>
-</div>
-<p>To quantify the robustness of the inference, we calculate the number of treatment cases that would need to be switched from “improved” to “exacerbated or unchanged” to change the inference – a quantity we refer to as the Robustness of the Inference to Switches (RIS). We calculate that if one of the 25 HCQ “improved” cases were instead classified as “excacerbated or unchanged” (RIS=1), the probability difference between HCQ and the control would drop to <span class="math inline">\(23\)</span> percentage points (<span class="math inline">\(\frac{24}{31} - \frac{17}{31}=.23\)</span>) and would no longer be statistically significant (<span class="math inline">\(χ^2 = 3.5\)</span>, <span class="math inline">\(p &gt; .06\)</span>).</p>
-<div id="using-konfound-it-to-reproduce-the-results." class="section level2">
-<h2>Using KonFound-it to reproduce the results.</h2>
-<p>Since we have a <span class="math inline">\(2 \times2\)</span> table, we use tkonfound function to calculates the number of cases (RIS) that would have to be switched from one cell to another of a <span class="math inline">\(2 \times2\)</span> table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.</p>
-<pre class="r"><code>konfound::tkonfound(a = 14, b = 17, c = 6, d= 25)</code></pre>
-<pre><code>## [[1]]
-## [1] &quot;The tkonfound function calculates the number of cases that would have to be switched from one cell to another of a 2x2 table to invalidate an inference made about the association between the rows and columns. This can be applied to treatment vs control with successful vs unsuccessful outcomes.&quot;
-## 
-## [[2]]
-## [1] &quot;See konfound_fig for full and accessible details in graphic form!&quot;
-## 
-## [[3]]
-## [1] &quot;To invalidate the inference, 1 case needs to be transferred from treatment success to treatment failure, as shown, from the User-entered Table to the Transfer Table.&quot;
-## 
-## $User_enter_value
-##           Fail Success
-## Control     14      17
-## Treatment    6      25
-## 
-## $Transfer_Table
-##           Fail Success
-## Control     14      17
-## Treatment    7      24
-## 
-## [[6]]
-## [1] &quot;For the User-entered Table, we have a Pearson&#39;s chi square of 4.724, with p value of 0.030.&quot;
-## 
-## [[7]]
-## [1] &quot;For the Transfer Table, we have a Pearson&#39;s chi square of 3.528, with p value of 0.060.&quot;</code></pre>
-<p>Now we use tkonfound_fig to generate the figure that plots the change in effect size as a function of switching outcomes for treatment cases.</p>
-<pre class="r"><code>konfound::tkonfound_fig(a = 14, b = 17, c = 6, d= 25)</code></pre>
-<pre><code>## [[1]]</code></pre>
-<p><img src="/post/2020-05-09-hcq_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<pre><code>## 
-## [[2]]</code></pre>
-<p><img src="/post/2020-05-09-hcq_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
-</div>
+  <p>
+  The first report of a randomized trial regarding hydroxychloroquine (HCQ) came from a study conducted at the Renmin Hospital of Wuhan University. The table below shows the association between treatment (HCQ vs conventional) and condition (improved vs exacerbated/ucnhanged). For Table 1, \(χ^2= 4.7\), \(p = 0.03\), and the authors concluded that HCQ was efficacious.
+Table 1. Association between hydroxychloroquine (HCQ) vs Conventional Treatments and Pneumonia on Chest CT
+ To quantify the robustness of the inference, we calculate the number of treatment cases that would need to be switched from “improved” to “exacerbated or unchanged” to change the inference – a quantity we refer to as the Robustness of the Inference to Switches (RIS).
+  </p>
 
   
+  <footer>
+    <a href="/2020/05/12/hcq/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2020/05/12/remdesivir/">From early RCT: effect of Remdesivir on mortality could go either way</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+     
+     <i class="fa fa-user fa-fw"></i>
+    <span>COVID team</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2020/05/12</time>
+  </div>
+
   
 
   
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
     
-    <a href="/2020/05/12/remdesivir/"><i class="fa fa-chevron-left"></i></a>
+      <a class="post-taxonomy-tag" href="/tags/covid-19">COVID-19</a>&nbsp;&#47;
     
-  </div>
-  <div class="pure-u-10-24">
+      <a class="post-taxonomy-tag" href="/tags/nonlinear">nonlinear</a>&nbsp;&#47;
     
-    <nav class="prev">
-      <a href="/2020/05/12/remdesivir/">From early RCT: effect of Remdesivir on mortality could go either way</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="/2020/05/12/covid-introduction/">Why is robustness important for emerging COVID-19 studies?</a>
-    </nav>
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
     
   </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="/2020/05/12/covid-introduction/"><i class="fa fa-chevron-right"></i></a>
-    
-  </div>
+  
+  
+
 </div>
 
+  </header>
 
+  <p>
+  Consider the recent randomized double-blind, placebo-controlled trial of Remdesivir for patients with severe COVID-19. The study found no discernable difference in mortality: Twenty-two of \(158\) (\(14\%\)) Remdesivir patients died within \(28\) days while \(10\) of \(78\) (\(13\%\)) in the placebo group died (Table 1). How different would the results have to be in the current study to change statistical inference about Remdesivir?
+Table 1. Comparison of Remdesivir vs Placebo Control on Mortality.
+  </p>
 
   
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+  <footer>
+    <a href="/2020/05/12/remdesivir/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
 
-(function() {
+  
+    <article>
+  <header>
+    <h2><a href="/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/">What do we do as more studies come out?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+     
+     <i class="fa fa-user fa-fw"></i>
+    <span>COVID team</span>
     
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2020/05/13</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
     
-    if (window.location.hostname == "localhost")
-        return;
+      <a class="post-taxonomy-tag" href="/tags/covid-19">COVID-19</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/accumulative">accumulative</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/nonlinear">nonlinear</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+    
+  </div>
+  
+  
 
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'konfoundcovid';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
 
+  </header>
 
+  <p>
+  Online dashboards, such as the COVID-19 clinical trials registry, provide near real-time tracking and categorization of findings accumulating across emerging research. As such one can update the robustness of the cumulative findings for a given COVID-19 treatment. We illustrate using a historical non-COVID example: the study-by-study accumulation of \(16\) estimated effects presented in a meta-analysis of randomized trials examining the impact of hypertension treatments on the probability of suffering a stroke (data from Collins et al.
+  </p>
+
+  
+  <footer>
+    <a href="/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="/2020/05/12/a-short-talk/">A 12-min talk</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+     
+     <i class="fa fa-user fa-fw"></i>
+    <span>Spiro Maroulis</span>
+    
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2020/05/12</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/covid-19">COVID-19</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/nonlinear">nonlinear</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  In an online workshop on the theme of “COVID-19 and Public Policy and Management” (May 1st) at Arizona State Unviersity, Dr. Spiro Maroulis gave a talk “Communicating the Robustness of Inferences as COVID-19 Evidence Accumulates.” See the link here.
+  </p>
+
+  
+</article>
+
+  
 </div>
 
 </div>
@@ -404,11 +479,7 @@ For Table 1, <span class="math inline">\(χ^2= 4.7\)</span>, <span class="math i
 
 
 
-<script src="/js/math-code.js"></script>
-  <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  
 
 
 </body>
 </html>
-

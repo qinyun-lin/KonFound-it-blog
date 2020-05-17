@@ -1,9 +1,12 @@
 ---
-title: 'First example: Pneumonia finding from initial hydroxychloroquine RCT only requires 1 ‘switch’ to invalidate'
-author: ''
+title: 'First example: Pneumonia finding from initial hydroxychloroquine RCT only
+  requires 1 ‘switch’ to invalidate'
+author: 'COVID team'
 date: '2020-05-12'
 tags:
   - COVID-19
+  - nonlinear
+  - R
 slug: hcq
 weight: 3
 ---

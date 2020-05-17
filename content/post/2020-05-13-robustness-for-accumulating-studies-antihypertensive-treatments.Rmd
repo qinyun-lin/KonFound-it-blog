@@ -1,13 +1,13 @@
 ---
-title: 'What do we do as more studies come out?'
-author: 'COVID team'
+title: What do we do as more studies come out?
+author: COVID team
 date: '2020-05-13'
-slug: robustness-for-accumulating-studies-antihypertensive-treatments
-categories: []
 tags:
   - COVID-19
-description: ''
-topics: []
+  - accumulative
+  - nonlinear
+  - R
+slug: robustness-for-accumulating-studies-antihypertensive-treatments
 weight: 5
 ---
 Online dashboards, such as the [COVID-19 clinical trials registry](http://www.covid-trials.org/), provide near real-time tracking and categorization of findings accumulating across emerging research. As such one can update the robustness of the cumulative findings for a given COVID-19 treatment. We illustrate using a historical non-COVID example: the study-by-study accumulation of $16$ estimated effects presented in a meta-analysis of randomized trials examining the impact of hypertension treatments on the probability of suffering a stroke (data from [Collins et al., 1990](https://www.ncbi.nlm.nih.gov/pubmed/1969567)). 
