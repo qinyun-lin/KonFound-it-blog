@@ -10,9 +10,9 @@ description: ''
 topics: []
 weight: 4
 ---
-Now consider the previous example of Remdesivir but instead we are interested in the continuous outcome variable of time to clinical improvement.
+Now consider [the previous example of Remdesivir](http://127.0.0.1:5274/2020/05/12/remdesivir/) but instead we are interested in the continuous outcome variable of time to clinical improvement.
 
-![**Figure 1. Time to clinical improvement in the Remdesivir example. **Data from Table 3, Wang et al (2020).](/post/2020-05-13-remdesivir-on-time-to-clinical-improvement_files/Fig 2.png){width=100%}
+![**Figure 1. Time to clinical improvement in the Remdesivir example. **Data from Table 3, [Wang et al (2020)](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31022-9/fulltext).](/post/2020-05-13-remdesivir-on-time-to-clinical-improvement_files/Fig 2.png){width=100%}
 
 We can interpret the robustness of inference regarding Remdesivir's effect on time to clinical improvement in following ways. 
 
