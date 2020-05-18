@@ -21,6 +21,7 @@ Our group includes:
 * Yuqing Liu
 * [Zixi Chen](https://github.com/ZixiChen)
 * Tingqiao Chen
+* [Wei Pan](https://sites.duke.edu/panwei/)
 
 Click [here](https://groups.google.com/forum/#!forum/konfound-it) to join our mailing list for updates on workshops, progress in related research and publications!
 
