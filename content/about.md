@@ -17,7 +17,7 @@ Our group includes:
 &nbsp;
 
 * [Guan Saw](http://education.utsa.edu/faculty/profile/guan.saw@utsa.edu)
-* Tenglong Li
+* [Tenglong Li](https://cps.northeastern.edu/faculty/tenglong-li)
 * Yuqing Liu
 * [Zixi Chen](https://github.com/ZixiChen)
 * Tingqiao Chen
