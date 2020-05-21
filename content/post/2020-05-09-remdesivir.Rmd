@@ -27,5 +27,6 @@ Similar to the HCQ example, we have a $2 \times2$ table in this Remdesivir examp
 konfound::tkonfound(a = 10, b = 68, c = 22, d= 136)
 ```
 ```{r, warning=F}
+library(konfound)
 konfound::tkonfound_fig(a = 10, b = 68, c = 22, d= 136)
 ```

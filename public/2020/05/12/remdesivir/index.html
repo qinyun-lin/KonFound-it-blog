@@ -319,11 +319,17 @@ Figure 1 places these results in a larger context by plotting the change in effe
 ## 
 ## [[7]]
 ## [1] &quot;For the Transfer Table, we have a Pearson&#39;s chi square of 4.065, with p value of 0.044.&quot;</code></pre>
+<pre class="r"><code>library(konfound)</code></pre>
+<pre><code>## Sensitivity analysis as described in Frank, Maroulis, Duong, and Kelcey (2013) and in Frank (2000).
+## For more information visit http://konfound-it.com.</code></pre>
 <pre class="r"><code>konfound::tkonfound_fig(a = 10, b = 68, c = 22, d= 136)</code></pre>
 <pre><code>## [[1]]</code></pre>
 <p><img src="/post/2020-05-09-remdesivir_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <pre><code>## 
-## [[2]]</code></pre>
+## [[2]]
+## [1] &quot;A bend in line indicates switches from the control row because the treatment row was exhausted.&quot;
+## 
+## [[3]]</code></pre>
 <p><img src="/post/2020-05-09-remdesivir_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
 </div>
 
