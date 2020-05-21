@@ -9,6 +9,6 @@ description: ''
 topics: []
 ---
 ## Past Workshops
+* [AERA Virtual Research Learning Series, Tuesday (May 19th), 1PM EST, 2020](https://www.dropbox.com/s/807tr2v1v3dkx0h/12-min-talk.mp4?dl=0) 
 
 ## Future Workshops 
-* [AERA Virtual Research Learning Series, Tuesday (May 19th), 1PM EST, 2020](https://www.dropbox.com/s/807tr2v1v3dkx0h/12-min-talk.mp4?dl=0) 
