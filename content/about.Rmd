@@ -2,6 +2,9 @@
 title: About
 author: ''
 date: '2020-05-13'
+slug: about
+categories: []
+tags: []
 description: About us, KonFound-it and this site
 sidemenu: 'true'
 ---
@@ -15,8 +18,7 @@ Our group includes:
 * [Qinyun Lin](https://spatial.uchicago.edu/directories/full/team)
 * [Ran Xu](https://sites.google.com/site/ranxupersonalweb/)
 * [Joshua Rosenberg](https://joshuamrosenberg.com/)
-<p>&nbsp;</p>
-
+&nbsp;</p>
 * [Guan Saw](http://education.utsa.edu/faculty/profile/guan.saw@utsa.edu)
 * [Tenglong Li](https://cps.northeastern.edu/faculty/tenglong-li)
 * Yuqing Liu
@@ -31,6 +33,7 @@ Have questions or suggestions? Feel free to contact Dr. Ken Frank via [email](ma
 Thanks for reading! Happy KonFound-it!
 
 We refer to a lot of open resources for building this site, including:
+
 * [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
 * [Simply Statistics](https://simplystatistics.org/)
 
