@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 14 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -71,6 +71,18 @@ Percent bias necessary to invalidate the inference To invalidate an inference, \
       
       <guid>/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/</guid>
       <description>Online dashboards, such as the COVID-19 clinical trials registry, provide near real-time tracking and categorization of findings accumulating across emerging research. As such one can update the robustness of the cumulative findings for a given COVID-19 treatment. We illustrate using a historical non-COVID example: the study-by-study accumulation of \(16\) estimated effects presented in a meta-analysis of randomized trials examining the impact of hypertension treatments on the probability of suffering a stroke (data from Collins et al.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>We are a group of researchers, led by Dr. Ken Frank, who would like to contribute to better communications of research inferences/findings.
+Our group includes:
+ Ken Frank Spiro Maroulis Qinyun Lin Ran Xu Joshua Rosenberg  Guan Saw Tenglong Li Yuqing Liu Zixi Chen Tingqiao Chen Wei Pan  Click here to join our mailing list for updates on workshops, progress in related research and publications!
+Have questions or suggestions?</description>
     </item>
     
     <item>
