@@ -9,11 +9,11 @@ sidemenu: 'true'
 We are a group of researchers, led by Dr. Ken Frank, who would like to contribute to better communications of research inferences/findings. 
 
 Our group includes: 
-+ [Ken Frank](https://msu.edu/~kenfrank/)
-+ [Spiro Maroulis](http://www.public.asu.edu/~smarouli/Spiro_Maroulis/Home.html)
-+ [Qinyun Lin](https://spatial.uchicago.edu/directories/full/team)
-+ [Ran Xu](https://sites.google.com/site/ranxupersonalweb/)
-+ [Joshua Rosenberg](https://joshuamrosenberg.com/)
+* [Ken Frank](https://msu.edu/~kenfrank/)
+* [Spiro Maroulis](http://www.public.asu.edu/~smarouli/Spiro_Maroulis/Home.html)
+* [Qinyun Lin](https://spatial.uchicago.edu/directories/full/team)
+* [Ran Xu](https://sites.google.com/site/ranxupersonalweb/)
+* [Joshua Rosenberg](https://joshuamrosenberg.com/)
 &nbsp;
 
 * [Guan Saw](http://education.utsa.edu/faculty/profile/guan.saw@utsa.edu)
