@@ -8,4 +8,4 @@ tags: []
 description: 'Contact us'
 topics: []
 ---
-Have questions or suggestions? Feel free to contact Dr. Ken Frank via [email](mailto:kenfrank@msu.com) or [open an issue on GitHub](https://github.com/linqinyu/KonFound-blog/issues/new).
+Have questions or suggestions? Feel free to contact Dr. Ken Frank via [email](mailto:kenfrank@msu.edu) or [open an issue on GitHub](https://github.com/linqinyu/KonFound-blog/issues/new).
