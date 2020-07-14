@@ -12,3 +12,6 @@ topics: []
 * [AERA Virtual Research Learning Series, Tuesday (May 19th), 1PM EST, 2020](https://www.dropbox.com/s/807tr2v1v3dkx0h/12-min-talk.mp4?dl=0) 
 
 ## Future Workshops 
+* Workshop sponsered by the American Sociological Association, August 10th, 11:30 AM - 1:30 PM. Click [here](https://www.asanet.org/annual-meeting-2020/registration) to register for the conference. Specific details about how to register for the workshop should be available by the week of July 20.
+
+* American Statistical Association Conference on Statistical Practice (CSP2021), Feb 18th. 9 AM - 1 PM EST, 2021. Click [here](https://ww2.amstat.org/meetings/csp/2021/registration.cfm) to register for the conference.
