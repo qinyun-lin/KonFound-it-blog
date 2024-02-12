@@ -1,109 +1,69 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/2020/05/14/welcome/</loc>
+    <loc>https://www.konfound-it.org/2020/05/14/welcome/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/05/12/covid-introduction/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/2020/05/12/covid-introduction/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/05/12/hcq/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/2020/05/12/hcq/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/05/12/remdesivir/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/2020/05/12/remdesivir/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/05/13/remdesivir-on-time-to-clinical-improvement/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/2020/05/13/remdesivir-on-time-to-clinical-improvement/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/2020/05/13/robustness-for-accumulating-studies-antihypertensive-treatments/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/about/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/konfound-it-in-r/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/konfound-it-in-r/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/accumulative/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/post/</loc>
+    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.konfound-it.org/tags/accumulative/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/continuous/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/tags/continuous/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/covid-19/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/tags/covid-19/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/nonlinear/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/tags/nonlinear/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publications/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/publications/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/tags/r/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/tags/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/05/12/a-short-talk/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/2020/05/12/a-short-talk/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/contact/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/contact/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/workshops/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/workshops/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.konfound-it.org/categories/</loc>
+  </url><url>
+    <loc>https://www.konfound-it.org/topics/</loc>
   </url>
-  
-  <url>
-    <loc>/topics/</loc>
-  </url>
-  
 </urlset>

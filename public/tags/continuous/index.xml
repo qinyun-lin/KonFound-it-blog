@@ -2,27 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>continuous on KonFound-it!</title>
-    <link>/tags/continuous/</link>
+    <link>https://www.konfound-it.org/tags/continuous/</link>
     <description>Recent content in continuous on KonFound-it!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/continuous/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://www.konfound-it.org/tags/continuous/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From early RCT: robust inference of Remdesivir effect on time to clinical improvement</title>
-      <link>/2020/05/13/remdesivir-on-time-to-clinical-improvement/</link>
+      <link>https://www.konfound-it.org/2020/05/13/remdesivir-on-time-to-clinical-improvement/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/05/13/remdesivir-on-time-to-clinical-improvement/</guid>
-      <description>Now consider the previous example of Remdesivir but instead we are interested in the continuous outcome variable of time to clinical improvement.
-Figure 1. Time to clinical improvement in the Remdesivir example. Data from Table 3, Wang et al (2020).
- We can interpret the robustness of inference regarding Remdesivir’s effect on time to clinical improvement in following ways.
-Percent bias necessary to invalidate the inference To invalidate an inference, \(70.</description>
+      <guid>https://www.konfound-it.org/2020/05/13/remdesivir-on-time-to-clinical-improvement/</guid>
+      <description>Now consider the previous example of Remdesivir but instead we are interested in the continuous outcome variable of time to clinical improvement.&#xA;Figure 1. Time to clinical improvement in the Remdesivir example. Data from Table 3, Wang et al (2020).&#xA;We can interpret the robustness of inference regarding Remdesivir’s effect on time to clinical improvement in following ways.&#xA;Percent bias necessary to invalidate the inference To invalidate an inference, \(70.</description>
     </item>
-    
   </channel>
 </rss>
