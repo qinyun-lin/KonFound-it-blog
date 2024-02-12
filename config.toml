@@ -67,7 +67,7 @@ post = "/:year/:month/:day/:slug"
     name = "KonFound-it app"
     pre = "<i class='fa fa-star fa-fw'></i>"
     weight = 7
-    url = "https://jmichaelrosenberg.shinyapps.io/konfound-it/"
+    url = "https://konfound-project.shinyapps.io/konfound-it/"
     [[menu.main]]
     name = "KonFound-it R"
     pre = "<i class='fa fa-star fa-fw'></i>"
